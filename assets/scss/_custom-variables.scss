@@ -1,0 +1,27 @@
+// CUSTOM VARIABLES
+
+@import 'colors';
+@import 'shadows';
+
+
+// Brand color customization
+$white-color: #FFFFFF !default;
+$gray-color:  #999999 !default;
+
+$brand-primary: $purple !default;
+$brand-success: $green !default;
+$brand-danger: $red !default;
+$brand-warning: $yellow !default;
+$brand-info: $light-blue !default;
+$brand-rose: $pink !default;
+
+// Shadows customization
+$mdb-shadow-key-umbra-opacity: 0.2 !default;
+$mdb-shadow-key-penumbra-opacity: 0.14 !default;
+$mdb-shadow-ambient-shadow-opacity: 0.12 !default;
+
+// Border-radius customization
+$border-radius-base: 3px !default;
+$border-radius-small: 2px !default;
+$border-radius-huge: 10px !default;
+$border-radius-extreme: 30px !default;

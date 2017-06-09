@@ -8,7 +8,6 @@
 // Core variables and mixins
 @import "variables";
 @import "mixins";
-@import "custom";
 
 // Reset and dependencies
 @import "normalize";
@@ -54,4 +53,5 @@
 @import "utilities";
 
 // Custom
-@import "shadows";
+@import "animations";
+@import "custom";

@@ -3,35 +3,42 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-@import 'colors';
-@import 'shadows';
+// @import 'colors';
+// @import 'shadows';
 
 
 // Custom Variables
 
 // Brand color customization
-$white-color: #FFFFFF !default;
-$gray-color:  #999999 !default;
+// $white-color: #FFFFFF !default;
+// $gray-color:  #999999 !default;
 
-$brand-primary: $purple !default;
-$brand-success: $green !default;
-$brand-danger: $red !default;
-$brand-warning: $yellow !default;
-$brand-info: $light-blue !default;
-$brand-rose: $pink !default;
+// $brand-primary: $purple !default;
+// $brand-success: $green !default;
+// $brand-danger: $red !default;
+// $brand-warning: $yellow !default;
+// $brand-info: $light-blue !default;
+// $brand-rose: $pink !default;
 
 // Shadows customization
-$mdb-shadow-key-umbra-opacity: 0.2 !default;
-$mdb-shadow-key-penumbra-opacity: 0.14 !default;
-$mdb-shadow-ambient-shadow-opacity: 0.12 !default;
+// $mdb-shadow-key-umbra-opacity: 0.2 !default;
+// $mdb-shadow-key-penumbra-opacity: 0.14 !default;
+// $mdb-shadow-ambient-shadow-opacity: 0.12 !default;
 
 // Border-radius customization
-$border-radius-base: 3px !default;
-$border-radius-small: 2px !default;
-$border-radius-huge: 10px !default;
-$border-radius-extreme: 30px !default;
+// $border-radius-base: 3px !default;
+// $border-radius-small: 2px !default;
+// $border-radius-huge: 10px !default;
+// $border-radius-extreme: 30px !default;
 
+/*!
+ * Custom Styles 
+ * 
+ * Material-kit Free version & MDB Free version
+ *
+ */
 
+/* Shadow Effects */
 // Layout customization
 .main {
 	border-radius: $border-radius-base * 2;
@@ -61,4 +68,154 @@ $border-radius-extreme: 30px !default;
 // Button customization
 .btn {
 	@include shadow-2dp();
+}
+
+// Image customization
+.img-raised {
+	@include shadow-big();
+}
+
+/* Responsive Headings */
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 768px) {
+    .h1-responsive {
+        font-size: 150%;
+        font-weight: 500;
+    }
+    .h2-responsive {
+        font-size: 145%;
+    }
+    .h3-responsive {
+        font-size: 135%;
+    }
+    .h4-responsive {
+        font-size: 135%;
+    }
+    .h5-responsive {
+        font-size: 135%;
+    }
+}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .h1-responsive {
+        font-size: 170%;
+    }
+    .h2-responsive {
+        font-size: 140%;
+    }
+    .h3-responsive {
+        font-size: 125%;
+    }
+    .h4-responsive {
+        font-size: 125%;
+    }
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .h1-responsive {
+        font-size: 200%;
+    }
+    .h2-responsive {
+        font-size: 170%;
+    }
+    .h3-responsive {
+        font-size: 140%;
+    }
+    .h4-responsive {
+        font-size: 125%;
+    }
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .h1-responsive {
+        font-size: 250%;
+    }
+    .h2-responsive {
+        font-size: 200%;
+    }
+    .h3-responsive {
+        font-size: 170%;
+    }
+    .h4-responsive {
+        font-size: 140%;
+    }
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+
+/* Center Align */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    p {
+        margin: 0;
+    }
+    ul {
+        text-align: center;
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Dividers */
+// Dividers light and dark variations
+.hr-light {
+    background-color: #fff;
+    height: 0.5px;
+}
+
+.hr-dark {
+    background-color: #666;
+    height: 0.5px;
+}
+
+// Divider with title
+.divider-new {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    h2 {
+        margin-top: 5px;
+    }
+    &:before {
+        content: '';
+        height: 1.5px;
+        background: #666;
+        flex: 1;
+        margin: 0 .45em 0 0;
+    }
+    &:after {
+        content: '';
+        height: 1.5px;
+        background: #666;
+        flex: 1;
+        margin: 0 0 0 .45em;
+    }
 }
