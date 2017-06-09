@@ -68,8 +68,7 @@ img {
    padding-top: 6rem;
    padding-bottom: 6rem;
    background-color: #fff;
-   background-image: url(img/banjo.jpg);
-   background-repeat: no-repeat;
+   background: url(img/banjo.jpg) no-repeat;
    background-position: bottom center;
    background-size: cover;
 }
