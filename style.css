@@ -67,23 +67,20 @@ img {
 #jumbotron {
    padding-top: 6rem;
    padding-bottom: 6rem;
-   margin-bottom: 0;
    background-color: #fff;
-   background-image: url('../img/banjo.jpg');
+   background-image: url('img/banjo.jpg');
    background-repeat: no-repeat;
    background-position: bottom center;
    background-size: cover;
 }
 
-.jumbotron .container {
+#jumbotron .container {
    max-width: 40rem;
    background: rgba(255,255,255,0.2);
    padding: 2rem;
-   color: white;
 }
 
-.jumbotron p {
-   color: white;
+#jumbotron p {
    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
