@@ -63,6 +63,17 @@ img {
    background-color: #333;
 }
 
+/* Blog Page */
+#jumbotron {
+   padding-top: 6rem;
+   padding-bottom: 6rem;
+   margin-bottom: 0;
+   background-color: #fff;
+   background-image: url('../img/banjo.jpg');
+   background-repeat: no-repeat;
+   background-position: bottom center;
+   background-size: cover;
+}
 
 /* --------------------------------------
    Typography
