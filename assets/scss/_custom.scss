@@ -193,14 +193,12 @@
 }
 
 // Divider with title
-.divider-new {
+.divider-old {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-weight: 300;
-    margin-top: 45px;
-    margin-bottom: 45px;
     h2 {
         margin-top: 5px;
     }
@@ -218,4 +216,10 @@
         flex: 1;
         margin: 0 0 0 .45em;
     }
+}
+
+.divider-new {
+    @extend .divider-old;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
