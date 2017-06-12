@@ -37,6 +37,9 @@
             <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a href="page.html" class="nav-link">Page</a>
+          </li>
+          <li class="nav-item">
             <a href="blog.html" class="nav-link">Blog</a>
           </li>
           <li class="nav-item">
@@ -49,6 +52,9 @@
               <a href="#" class="dropdown-item">Another Action</a>
               <a href="#" class="dropdown-item">Else</a>
             </div><!-- end dropdown-menu -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-contact">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -63,6 +69,56 @@
         </ul>
       </div><!-- end collapse navbar-collapse -->
     </nav>
+
+    <!-- MODAL CONTACT
+    ====================================================== -->
+    <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-edit"></span> Contact US!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div><!-- end modal-header -->
+          <div class="modal-body">
+            <p class="lead text-center">We like to receive a messages.</p>
+            <br>
+            <form>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-user col-1"></span>
+                <label class="sr-only" for="formInput1">Your Name</label>
+                <input type="text" class="form-control col-10" id="formInput1" placeholder="Your Name">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-envelope col-1"></span>
+                <label class="sr-only" for="formInput2">Email</label>
+                <input type="text" class="form-control col-10" id="formInput2" placeholder="Email">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-tag col-1"></span>
+                <label class="sr-only" for="formInput3">Subject</label>
+                <input type="text" class="form-control col-10" id="formInput3" placeholder="Subject">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-pencil col-1"></span>
+                <label class="sr-only" for="formInput4">Message</label>
+                <textarea type="text" class="form-control col-10" id="formInput4" rows="4" placeholder="Message"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary">Submit</button>
+                <div class="my-3">
+                  <p>Or <br> would you prefer to call? <br> <span class="glyphicon glyphicon-phone">+01 234 565 280</span></p>
+                </div>
+              </div>
+            </form>
+          </div><!-- end modal-body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+      </div><!-- end modal-dialog -->
+    </div><!-- end modal-contact -->
 
     <!-- SECTION SLIDE
     ====================================================== -->

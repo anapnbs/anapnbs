@@ -15,7 +15,7 @@ img {
    -------------------------------------- */
 
 .section-content {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 /* Landscape Section */
@@ -81,6 +81,25 @@ img {
 
 #jumbotron p {
    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Page */
+.cover-bg {
+   position: relative;
+}
+.cover-bg::after {
+   display: block;
+   position: relative;
+   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000000 100%);
+   margin-top: -150px;
+   height: 150px;
+   width: 100%;
+   content: '';
+}
+.cover-txt {
+   position: absolute;
+   bottom: 40px;
+   left: 60px;
 }
 
 /* --------------------------------------
@@ -167,4 +186,6 @@ img {
 /* --------------------------------------
    Etc
    -------------------------------------- */
-
+small.excerpt {
+   height: 5rem;
+}

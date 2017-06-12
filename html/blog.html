@@ -36,8 +36,11 @@
           <li class="nav-item">
             <a href="home.html" class="nav-link">Home</a>
           </li>
+          <li class="nav-item">
+            <a href="page.html" class="nav-link">Page</a>
+          </li>
           <li class="nav-item active">
-            <a href="#" class="nav-link">Blog<span class="sr-only">(current)</span></a>
+            <a href="blog.html" class="nav-link">Blog<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Services</a>
@@ -49,6 +52,9 @@
               <a href="#" class="dropdown-item">Another Action</a>
               <a href="#" class="dropdown-item">Else</a>
             </div><!-- end dropdown-menu -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-contact">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -63,6 +69,56 @@
         </ul>
       </div><!-- end collapse navbar-collapse -->
     </nav>
+
+    <!-- MODAL CONTACT
+    ====================================================== -->
+    <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-edit"></span> Contact US!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div><!-- end modal-header -->
+          <div class="modal-body">
+            <p class="lead text-center">We like to receive a messages.</p>
+            <br>
+            <form>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-user col-1"></span>
+                <label class="sr-only" for="formInput1">Your Name</label>
+                <input type="text" class="form-control col-10" id="formInput1" placeholder="Your Name">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-envelope col-1"></span>
+                <label class="sr-only" for="formInput2">Email</label>
+                <input type="text" class="form-control col-10" id="formInput2" placeholder="Email">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-tag col-1"></span>
+                <label class="sr-only" for="formInput3">Subject</label>
+                <input type="text" class="form-control col-10" id="formInput3" placeholder="Subject">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-pencil col-1"></span>
+                <label class="sr-only" for="formInput4">Message</label>
+                <textarea type="text" class="form-control col-10" id="formInput4" rows="4" placeholder="Message"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary">Submit</button>
+                <div class="my-3">
+                  <p>Or <br> would you prefer to call? <br> <span class="glyphicon glyphicon-phone">+01 234 565 280</span></p>
+                </div>
+              </div>
+            </form>
+          </div><!-- end modal-body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+      </div><!-- end modal-dialog -->
+    </div><!-- end modal-contact -->
 
     <!-- JUMBOTRON
     ====================================================== -->
@@ -81,7 +137,7 @@
 
 
 
-    <!-- TOP NEWS
+    <!-- SECTION1 : TOP NEWS
     ====================================================== -->
     <section id="topNews">
       <div class="section-content">
@@ -181,11 +237,120 @@
     
     <div class="container">
       <div class="divider-old">
-        <h2 class="h2-responsive">What's new?</h2>
+        <h2 class="h2-responsive"> What's new? </h2>
       </div>
     </div>
 
-    <!-- WHTAT'S NEW SECTION
+    <!-- SECTION3 : WHAT'S NEW
+    ====================================================== -->
+    <section id="magazine">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            
+            <div class="row text-left">
+              
+              <div class="col-lg-6 col-md-12">
+
+                <div class="single-news mt-3">
+                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28119%29.jpg" class="img-raised"></a>
+
+                  <div class="news-data mt-4">
+                    <a href="#" class="text-success float-left"><h5><span class="glyphicon glyphicon-star"></span> Work</h5></a>
+                    <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
+                  </div><!-- end news-data -->
+
+                  <a href="#"><h3>Discover unique mountain world.</h3></a>
+                  <p>There is many of breathtaking places in the world. For me mountains are the best of them. Travelling in the mountains can be difficult but views of the nature are worth it.</p> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam cumque in esse id, laborum, numquam labore, consequatur dolores, molestiae qui. Architecto accusantium iure nisi corrupti dolorum sequi aut, quae?</p>
+                </div><!-- end single-news: Featured-news -->
+
+              </div><!-- end col: First-column -->
+
+              <div class="col-lg-6 col-md-12">
+                
+                <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+                  
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 mt-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 mt-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
+                        <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                  </div><!-- end single-news: Small news -->
+
+              </div><!-- end col: Second-column -->
+
+            </div><!-- end row: Inner-row -->
+
+          </div><!-- end row: Outer-row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+    <div class="container">
+      <div class="divider-old">
+        <h2 class="h2-responsive"> Spine & Joint </h2>
+      </div>
+    </div>
+
+    <!-- SECTION 2 : SPINE & JOINT
     ====================================================== -->
     <section id="whatsnew">
       <div class="section-content">
@@ -193,145 +358,143 @@
           <div class="row">
 
             <div class="col-md-12">
-              <div id="magazine-section">
                 
-                <div class="row text-left">
+              <div class="row text-left">
+                
+                <div class="col-lg-6 col-md-12">
                   
-                  <div class="col-lg-6 col-md-12">
-                    
-                    <div class="single-news">
+                  <div class="single-news">
 
-                      <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(12).jpg" alt="image" class="img-raised"></a>
-                      <div class="news-data mt-4">
-                        <a href="#" class="text-success float-left"><h5><span class="glyphicon glyphicon-star"></span> Work</h5></a>
-                        <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
-                      </div><!-- end news-data -->
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(12).jpg" alt="image" class="img-raised"></a>
+                    <div class="news-data mt-4">
+                      <a href="#" class="text-success float-left"><h5><span class="glyphicon glyphicon-star"></span> Work</h5></a>
+                      <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
+                    </div><!-- end news-data -->
 
-                      <h3 class="mt-5"><a href="#">Feature post title</a></h3>
-                      <p class="my-4">This is feature post excerpt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at, quia neque aspernatur.</p>
-                      <hr class="hr-light">
-                    </div><!-- end single-news: Featured News -->
+                    <h3 class="mt-5"><a href="#">Feature post title</a></h3>
+                    <p class="my-4">This is feature post excerpt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at, quia neque aspernatur.</p>
+                    <hr class="hr-light">
+                  </div><!-- end single-news: Featured News -->
 
-                    <div class="single-news">
+                  <div class="single-news">
 
-                      <div class="row">
-                        <div class="col-md-3 my-3">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
-                        </div><!-- end col -->
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
 
-                        <div class="col-md-9 my-3">
-                          <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
-                          <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
-                        </div><!-- end col : excerpt -->
-                      </div><!-- end row -->
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
 
-                      <hr class="hr-light">
+                    <hr class="hr-light">
 
-                    </div><!-- end single-news: Small news -->
-                    
-                    <div class="single-news">
+                  </div><!-- end single-news: Small news -->
+                  
+                  <div class="single-news">
 
-                      <div class="row">
-                        <div class="col-md-3 my-3">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
-                        </div><!-- end col -->
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
 
-                        <div class="col-md-9 my-3">
-                          <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
-                          <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
-                        </div><!-- end col : excerpt -->
-                      </div><!-- end row -->
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
 
-                      <hr class="hr-light">
+                    <hr class="hr-light">
 
-                    </div><!-- end single-news: Small news -->
+                  </div><!-- end single-news: Small news -->
 
-                    <div class="single-news">
+                  <div class="single-news">
 
-                      <div class="row">
-                        <div class="col-md-3 mt-3">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
-                        </div><!-- end col -->
+                    <div class="row">
+                      <div class="col-md-3 mt-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
 
-                        <div class="col-md-9 mt-3">
-                          <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
-                          <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
-                        </div><!-- end col : excerpt -->
-                      </div><!-- end row -->
+                      <div class="col-md-9 mt-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
+                        <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
 
-                    </div><!-- end single-news: Small news -->
+                  </div><!-- end single-news: Small news -->
 
-                  </div><!-- end col: First column -->
+                </div><!-- end col: First column -->
 
-                  <div class="col-lg-6 col-md-12">
-                    
-                    <div class="single-news">
+                <div class="col-lg-6 col-md-12">
+                  
+                  <div class="single-news">
 
-                      <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20(129).jpg" alt="image" class="img-raised"></a>
-                      <div class="news-data mt-4">
-                        <a href="#" class="text-warning float-left"><h5><span class="glyphicon glyphicon-heart"></span> Lifestyle</h5></a>
-                        <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
-                      </div><!-- end news-data -->
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20(129).jpg" alt="image" class="img-raised"></a>
+                    <div class="news-data mt-4">
+                      <a href="#" class="text-warning float-left"><h5><span class="glyphicon glyphicon-heart"></span> Lifestyle</h5></a>
+                      <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
+                    </div><!-- end news-data -->
 
-                      <h3 class="mt-5"><a href="#">Feature post title2</a></h3>
-                      <p class="my-4">This is feature post excerpt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at, quia neque aspernatur.</p>
-                      <hr class="hr-light">
-                    </div><!-- end single-news: Featured News -->
+                    <h3 class="mt-5"><a href="#">Feature post title2</a></h3>
+                    <p class="my-4">This is feature post excerpt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at, quia neque aspernatur.</p>
+                    <hr class="hr-light">
+                  </div><!-- end single-news: Featured News -->
 
-                    <div class="single-news">
+                  <div class="single-news">
 
-                      <div class="row">
-                        <div class="col-md-3 my-3">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
-                        </div><!-- end col -->
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
 
-                        <div class="col-md-9 my-3">
-                          <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
-                          <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
-                        </div><!-- end col : excerpt -->
-                      </div><!-- end row -->
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
 
-                      <hr class="hr-light">
+                    <hr class="hr-light">
 
-                    </div><!-- end single-news: Small news -->
-                    
-                    <div class="single-news">
+                  </div><!-- end single-news: Small news -->
+                  
+                  <div class="single-news">
 
-                      <div class="row">
-                        <div class="col-md-3 my-3">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
-                        </div><!-- end col -->
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
 
-                        <div class="col-md-9 my-3">
-                          <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
-                          <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
-                        </div><!-- end col : excerpt -->
-                      </div><!-- end row -->
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
 
-                      <hr class="hr-light">
+                    <hr class="hr-light">
 
-                    </div><!-- end single-news: Small news -->
+                  </div><!-- end single-news: Small news -->
 
-                    <div class="single-news">
+                  <div class="single-news">
 
-                      <div class="row">
-                        <div class="col-md-3 mt-3">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
-                        </div><!-- end col -->
+                    <div class="row">
+                      <div class="col-md-3 mt-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
 
-                        <div class="col-md-9 mt-3">
-                          <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
-                          <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
-                        </div><!-- end col : excerpt -->
-                      </div><!-- end row -->
+                      <div class="col-md-9 mt-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
+                        <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
 
-                    </div><!-- end single-news: Small news -->
+                  </div><!-- end single-news: Small news -->
 
-                  </div><!-- end col: Second column -->
+                </div><!-- end col: Second column -->
 
-                </div><!-- end row -->
+              </div><!-- end row -->
 
-              </div><!-- end magazine-section -->
             </div><!-- end col-md-12 -->
           
           </div><!-- end row -->
@@ -341,26 +504,110 @@
 
     <div class="container">
       <div class="divider-old">
-        <h2 class="h2-responsive">Tourism</h2>
+        <h2 class="h2-responsive"> Diet </h2>
       </div>
     </div>
 
-    <!-- TOURISM SECTION
+    <!-- SECTION3 : DIET
     ====================================================== -->
-    <section id="tourism">
+    <section id="magazine">
       <div class="section-content">
         <div class="container">
           <div class="row">
             
-            <div class="col-10 offset-1">
-              <p class="lead text-center"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur necessitatibus ipsa voluptates veniam dolorem doloremque optio tempore, omnis.</small></p>  
+            <div class="col-10 offset-1 mb-4">
+              <p class="lead text-center"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero aspernatur necessitatibus ipsa voluptates veniam dolorem doloremque optio tempore, omnis.</small></p> 
+              <br> 
             </div><!-- end col -->
             
             <div class="row text-left">
               
               <div class="col-lg-6 col-md-12">
-                
+
+                <div class="single-news mt-3">
+                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28119%29.jpg" class="img-raised"></a>
+
+                  <div class="news-data mt-4">
+                    <a href="#" class="text-success float-left"><h5><span class="glyphicon glyphicon-star"></span> Work</h5></a>
+                    <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
+                  </div><!-- end news-data -->
+
+                  <a href="#"><h3>Discover unique mountain world.</h3></a>
+                  <p>There is many of breathtaking places in the world. For me mountains are the best of them. Travelling in the mountains can be difficult but views of the nature are worth it.</p> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam cumque in esse id, laborum, numquam labore, consequatur dolores, molestiae qui. Architecto accusantium iure nisi corrupti dolorum sequi aut, quae?</p>
+                </div><!-- end single-news: Featured-news -->
+
               </div><!-- end col: First-column -->
+
+              <div class="col-lg-6 col-md-12">
+                
+                <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+                  
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 mt-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 mt-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
+                        <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                  </div><!-- end single-news: Small news -->
+
+              </div><!-- end col: Second-column -->
 
             </div><!-- end row: Inner-row -->
 
@@ -369,7 +616,481 @@
       </div><!-- end section-content -->
     </section>
 
+    <div class="container">
+      <div class="divider-old">
+        <h2 class="h2-responsive"> Ligament & Tendon </h2>
+      </div>
+    </div>
 
+    <!-- SECTION 4 : LIGAMENT & TENDON
+    ====================================================== -->
+    <section id="magazine">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-10 offset-1 mb-4">
+              <p class="lead text-center"><small>Passion is everything, we know how important it is in our lives. You can find a lot of interesting articles and tips on photography, film, cooking and many other fields. In addition, we inform about the latest exhibitions and cultural events.</small></p> 
+              <br> 
+            </div><!-- end col -->
+            
+            <div class="row text-left">
+              
+              <div class="col-lg-6 col-md-12">
+
+                <div class="single-news mt-3">
+                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%2833%29.jpg" class="img-raised"></a>
+
+                  <div class="news-data mt-4">
+                    <a href="#" class="text-success float-left"><h5><span class="glyphicon glyphicon-star"></span> Hobby</h5></a>
+                    <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
+                  </div><!-- end news-data -->
+
+                  <a href="#"><h3>Summer music festivals in Europe.</h3></a>
+                  <p>We want to present you top 5 summer music festivals take place in different countries in Europe. One of them is A Summer’s Tale, Germany, then Weather Festival, France.</p> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam cumque in esse id, laborum, numquam labore, consequatur dolores, molestiae qui. Architecto accusantium iure nisi corrupti dolorum sequi aut, quae?</p>
+                </div><!-- end single-news: Featured-news -->
+
+              </div><!-- end col: First-column -->
+
+              <div class="col-lg-6 col-md-12">
+                
+                <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(86).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">The best donuts in Paris. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+                  
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(76).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">Summer holidays with a pet.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(13).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">Vegan lunch with spinach and bean.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 mt-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Photography/4-col/img%20(12).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 mt-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
+                        <a href="#">How to choose a lens to reportage?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                  </div><!-- end single-news: Small news -->
+
+              </div><!-- end col: Second-column -->
+
+            </div><!-- end row: Inner-row -->
+
+          </div><!-- end row: Outer-row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+    <div class="container">
+      <div class="divider-old">
+        <h2 class="h2-responsive"> SIJ, Neuralgia & Headache</h2>
+      </div>
+    </div>
+
+    <!-- SECTION 5 : SIJ, NEURALGIA & HA
+    ====================================================== -->
+    <section id="magazine">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-10 offset-1 mb-4">
+              <p class="lead text-center"><small>Passion is everything, we know how important it is in our lives. You can find a lot of interesting articles and tips on photography, film, cooking and many other fields. In addition, we inform about the latest exhibitions and cultural events.</small></p> 
+              <br> 
+            </div><!-- end col -->
+
+            <div class="col-lg-4 col-md-12">
+              
+              <div class="single-news">
+                <a href="#" class="text-center"><h5><span class="glyphicon glyphicon-star"></span> Sacroiliac Joint Syndrome</h5></a>
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(78).jpg" alt="alt" class="img-raised my-4"></a>
+                <a href="#"><strong>6 Big Myths About Hydration.</strong><span class="glyphicon glyphicon-chevron-right float-right"></span></a><br>
+                <small class="excerpt">Excerpt. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+              </div><!-- end single-news: Featured -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+            </div><!-- end col: First column -->
+
+            <div class="col-lg-4 col-md-12">
+              
+              <div class="single-news">
+                <a href="#" class="text-center"><h5><span class="glyphicon glyphicon-certificate"></span> Neuralgia</h5></a>
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(78).jpg" alt="alt" class="img-raised my-4"></a>
+                <a href="#"><strong>6 Big Myths About Hydration.</strong><span class="glyphicon glyphicon-chevron-right float-right"></span></a><br>
+                <small class="excerpt">Excerpt. Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet, consectetur adipisicing elit.</small>
+
+              </div><!-- end single-news: Featured -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+            </div><!-- end col: Second column -->
+
+            <div class="col-lg-4 col-md-12">
+              
+              <div class="single-news">
+                <a href="#" class="text-center"><h5><span class="glyphicon glyphicon-headphones"></span> Headache</h5></a>
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(78).jpg" alt="alt" class="img-raised my-4"></a>
+                <a href="#"><strong>6 Big Myths About Hydration.</strong><span class="glyphicon glyphicon-chevron-right float-right"></span></a><br>
+                <small class="excerpt">Excerpt. Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet.</small>
+              </div><!-- end single-news: Featured -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+            </div><!-- end col: Third column -->
+
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+    <div class="container">
+      <div class="divider-old">
+        <h2 class="h2-responsive"> Event & Membership </h2>
+      </div>
+    </div>
+
+    <!-- SECTION 2 : EVENT MEMBERSHIP
+    ====================================================== -->
+    <section id="magazine">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-12">
+                
+              <div class="row text-left">
+                
+                <div class="col-lg-6 col-md-12">
+                  
+                  <div class="single-news">
+
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(12).jpg" alt="image" class="img-raised"></a>
+                    <div class="news-data mt-4">
+                      <a href="#" class="text-success float-left"><h5><span class="glyphicon glyphicon-star"></span> Event</h5></a>
+                      <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
+
+                    </div><!-- end news-data -->
+
+                    <h3 class="mt-5"><a href="#">Feature post title</a></h3>
+                    <p class="my-4">This is feature post excerpt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at, quia neque aspernatur.</p>
+                    <hr class="hr-light">
+                  </div><!-- end single-news: Featured News -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+                  
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 mt-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 mt-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
+                        <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                  </div><!-- end single-news: Small news -->
+
+                </div><!-- end col: First column -->
+
+                <div class="col-lg-6 col-md-12">
+                  
+                  <div class="single-news">
+
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20(129).jpg" alt="image" class="img-raised"></a>
+                    <div class="news-data mt-4">
+                      <a href="#" class="text-warning float-left"><h5><span class="glyphicon glyphicon-heart"></span> Membership</h5></a>
+                      <p class="text-right"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong></p>
+                    </div><!-- end news-data -->
+
+                    <h3 class="mt-5"><a href="#">Feature post title2</a></h3>
+                    <p class="my-4">This is feature post excerpt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at, quia neque aspernatur.</p>
+                    <hr class="hr-light">
+                  </div><!-- end single-news: Featured News -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(79).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">A journey through the woods. <span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+                  
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 my-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(64).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 my-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-3</strong></p>
+                        <a href="#">How to start surfing in Hawaii?<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                    <hr class="hr-light">
+
+                  </div><!-- end single-news: Small news -->
+
+                  <div class="single-news">
+
+                    <div class="row">
+                      <div class="col-md-3 mt-3">
+                        <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(25).jpg" class="img-raised" alt="thumb image"></a>
+                      </div><!-- end col -->
+
+                      <div class="col-md-9 mt-3">
+                        <p><strong><span class="glyphicon glyphicon-time"></span> 2017-6-8</strong></p>
+                        <a href="#">Why you need to see San Francisco.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+                      </div><!-- end col : excerpt -->
+                    </div><!-- end row -->
+
+                  </div><!-- end single-news: Small news -->
+
+                </div><!-- end col: Second column -->
+
+              </div><!-- end row -->
+
+            </div><!-- end col-md-12 -->
+          
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+    <div class="container">
+      <div class="divider-old">
+        <h2 class="h2-responsive"> TA, Autoimmune, GI & Etc</h2>
+      </div>
+    </div>
+
+    <!-- SECTION 5 : AUTO & ETC
+    ====================================================== -->
+    <section id="magazine">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-lg-3 col-md-6">
+              
+              <div class="single-news">
+                <a href="#" class="text-center"><h5><span class="glyphicon glyphicon-star"></span> TA</h5></a>
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(78).jpg" alt="alt" class="img-raised my-4"></a>
+                <a href="#"><strong>6 Big Myths About Hydration.</strong><span class="glyphicon glyphicon-chevron-right float-right"></span></a><br>
+                <small class="excerpt">Excerpt. Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet.</small>
+              </div><!-- end single-news: Featured -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+            </div><!-- end col: First column -->
+
+            <div class="col-lg-3 col-md-6">
+              
+              <div class="single-news">
+                <a href="#" class="text-center"><h5><span class="glyphicon glyphicon-certificate"></span> Autoimmune</h5></a>
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(78).jpg" alt="alt" class="img-raised my-4"></a>
+                <a href="#"><strong>6 Big Myths About Hydration.</strong><span class="glyphicon glyphicon-chevron-right float-right"></span></a><br>
+                <small class="excerpt">Excerpt. Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet.</small>
+              </div><!-- end single-news: Featured -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+            </div><!-- end col: Second column -->
+
+            <div class="col-lg-3 col-md-6">
+              
+              <div class="single-news">
+                <a href="#" class="text-center"><h5><span class="glyphicon glyphicon-headphones"></span> GI</h5></a>
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(78).jpg" alt="alt" class="img-raised my-4"></a>
+                <a href="#"><strong>6 Big Myths About Hydration.</strong><span class="glyphicon glyphicon-chevron-right float-right"></span></a><br>
+                <small class="excerpt">Excerpt. Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet.</small>
+              </div><!-- end single-news: Featured -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+            </div><!-- end col: Third column -->
+
+            <div class="col-lg-3 col-md-6">
+              
+              <div class="single-news">
+                <a href="#" class="text-center"><h5><span class="glyphicon glyphicon-headphones"></span> ETC</h5></a>
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20(78).jpg" alt="alt" class="img-raised my-4"></a>
+                <a href="#"><strong>6 Big Myths About Hydration.</strong><span class="glyphicon glyphicon-chevron-right float-right"></span></a><br>
+                <small class="excerpt">Excerpt. Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet.</small>
+              </div><!-- end single-news: Featured -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+              <hr class="hr-light">
+              
+              <div class="single-news">
+                <a href="#">6 Big Myths About Hydration.<span class="glyphicon glyphicon-chevron-right float-right"></span></a>
+              </div><!-- end single-news: Small -->
+
+            </div><!-- end col: Fourth column -->
+
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
 
 
 
