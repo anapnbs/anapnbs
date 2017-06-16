@@ -208,6 +208,27 @@ div.comment {
    border:1px dotted red;
 }
 
+/* == Program Page == */
+.tx-expenses {
+   position: relative;
+   padding: 1rem;
+   margin: 1rem -1rem;
+   border: solid #f7f7f9;
+}
+
+.tx-expenses::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.scrollspy-expenses {
+   position: relative;
+   height: 200px;
+   margin-top: .5rem;
+   overflow: auto;
+}
+
 
 /* --------------------------------------
    Typography
@@ -261,6 +282,19 @@ div.comment {
    }
 
 }
+
+@media (min-width: 576px) {
+
+   .tx-expenses {
+      padding: 1.5rem;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      border-width: .2rem;
+   }
+
+}
+
 
 /* == Landscape phone to portrait tablet == */
 @media (max-width: 768px) {
