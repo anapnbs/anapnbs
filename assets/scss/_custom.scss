@@ -12,6 +12,11 @@
  *
  */
 
+/* Typography */
+.text-gray {
+    color: $grey;
+}
+
 /* Shadow Effects */
 // Layout customization
 .main {
@@ -32,14 +37,22 @@
 
 // Card customization
 .card {
-	@include shadow-2dp();
+    @include shadow-2dp();
 }
 
 .card-raised {
     @include shadow-big();
 }
 
+.card-fadeInUp {
+    transition: 0.5s;
+	@include shadow-2dp();
 
+    &:hover {
+        transform: scale(1.05);
+        @include shadow-big-navbar();
+    }
+}
 
 // Button customization
 .btn {
@@ -49,6 +62,24 @@
 // Image customization
 .img-raised {
 	@include shadow-big();
+}
+
+// Form customization
+.form-control-plain {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: $input-padding-y 0;
+    background-color: transparent;
+    border-color: #E3E3E3;
+    resize: vertical;
+
+    &::placeholder {
+    color: $grey-400;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    // opacity: 1;
+  }
 }
 
 /* Responsive Headings */

@@ -1,60 +1,57 @@
 // Script.js
 
+// Scroll to Top
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-jQuery(document).ready(function() {
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrolltoTop").style.display = "block";
+    } else {
+        document.getElementById("scrolltoTop").style.display = "none";
+    }
+}
 
-	var windowHeight = jQuery(window).height();
-	var windowScrollPosTop = jQuery(window).scrollTop();
-	var windowScrollPosBottom = windowHeight + windowScrollPosTop;
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
-	jQuery.fn.revealOnScroll = function(direction, speed) {
+// Google Map
+function initMap(){
+	// Map options
+	var options = {
+		scrollwheel: false,
+		zoom:16,
+		center:{lat:35.235155, lng:129.012035}
+	}
 
-		return.this.each(function() {
+	// New map
+	var map = new google.maps.Map(document.getElementById('map'), options);
 
-			var objectOffset = jQuery(this).offset();
-			var objectOffsetTop = objectOffset.top;
-
-			if(!jQuery(this).hasClass("hidden")) {
-
-				if(direction == "right") {
-
-					jQuery(this).css({
-						"opacity"	: 0,
-						"right"		: "700px"
-					});
-
-				} else {
-
-					jQuery(this).css({
-						"opacity"	: 0,
-						"right"		: "-700px"
-					});
-
-				}
-
-				jQuery(this).addClass("hidden");	
-			}
-			
-			if( !jQuery(this).hasClass("animation-complete") ) {
-
-				if( windowScrollPosBottom > objectOffsetTop ) {
-					jQuery(this).animate({ "opacity" : 1, "right" : 0 }, speed).addClass("animation-complete");
-				}
-			}
-
-		});
-
-	} // end our function here
-
-
-	jQuery(window).scroll(function() {
-
-		windowHeight = jQuery(window).height();
-		windowScrollPosTop = jQuery(window).scrollTop();
-		windowScrollPosBottom = windowHeight + windowScrollPosTop;
-
-		jQuery("section").revealOnScroll("right", 4000);
-
+	// Add marker
+	var marker = new google.maps.Marker({
+		position:{lat:35.235155, lng:129.012035},
+		map:map,
+		icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
 	});
 
-});
+	var infoWindow = new google.maps.InfoWindow({
+		content:'<p class="lead text-primary">anapnbs clinic</p>'
+	});
+
+	marker.addListener('click', function(){
+		infoWindow.open(map, marker);
+	});
+
+}
+
+
+
+
+
+
+
+
+
