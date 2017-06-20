@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>SignUp Page</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-glyphicons.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Lightbox Lokeshdhakar CSS -->
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+  </head>
+  <body>
+
+    <!-- Scroll to Top button -->
+    <button onclick="topFunction()" id="scrolltoTop" title="Go to top">Top</button>
+
+    <!-- NAVIGATION MENUS
+    ====================================================== -->
+    <nav class="navbar sticky-top navbar-toggleable-md navbar-inverse bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <a href="#" class="navbar-brnad">
+        <img src="../img/logo_tim.png" class="rounded-circle" alt="Your Logo" width="40px" height="40px">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="clinic.html" class="nav-link">Clinic</a>
+          </li>
+          <li class="nav-item">
+            <a href="program.html" class="nav-link">Program</a>
+          </li>
+          <li class="nav-item active">
+            <a href="blog.html" class="nav-link">Blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link</a>
+            <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
+              <a href="#" class="dropdown-item">Action</a>
+              <a href="#" class="dropdown-item">Another Action</a>
+              <a href="#" class="dropdown-item">Else</a>
+            </div><!-- end dropdown-menu -->
+          </li>
+          <li class="nav-item">
+            <a href="reservation.html" class="nav-link">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</a>
+            <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
+              <a href="#" class="dropdown-item">Setting</a>
+              <a href="#" class="dropdown-item">Profile</a>
+              <a href="#" class="dropdown-item">Sign Out</a>
+            </div><!-- end dropdown-menu -->
+          </li>
+        </ul>
+      </div><!-- end collapse navbar-collapse -->
+    </nav>
+
+    <!-- MODAL CONTACT
+    ====================================================== -->
+    <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-edit"></span> Contact US!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div><!-- end modal-header -->
+          <div class="modal-body">
+            <p class="lead text-center">We like to receive a messages.</p>
+            <br>
+            <form>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-user col-1"></span>
+                <label class="sr-only" for="formInput1">Your Name</label>
+                <input type="text" class="form-control col-10" id="formInput1" placeholder="Your Name">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-envelope col-1"></span>
+                <label class="sr-only" for="formInput2">Email</label>
+                <input type="text" class="form-control col-10" id="formInput2" placeholder="Email">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-tag col-1"></span>
+                <label class="sr-only" for="formInput3">Subject</label>
+                <input type="text" class="form-control col-10" id="formInput3" placeholder="Subject">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-pencil col-1"></span>
+                <label class="sr-only" for="formInput4">Message</label>
+                <textarea type="text" class="form-control col-10" id="formInput4" rows="4" placeholder="Message"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary">Submit</button>
+                <div class="my-3">
+                  <p>Or <br> would you prefer to call? <br> <span class="glyphicon glyphicon-phone">+01 234 565 280</span></p>
+                </div>
+              </div>
+            </form>
+          </div><!-- end modal-body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+      </div><!-- end modal-dialog -->
+    </div><!-- end modal-contact -->
+
+    <!-- SIGNUP SECTION
+    ====================================================== -->
+    <section id="signUp">
+      <div class="section-content" style="background-image: url('../img/city.jpg'); background-size: cover; background-position: top center; min-height: 94vh;">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+              <div class="card card-fadeInUp card-signup text-center my-5">
+              
+                <div class="header bg-primary text-white p-4">
+                  <h4 class="my-4">Sign Up</h4>
+                  <div class="social-line my-4">
+                    <a href="#pablo" class="text-white mr-3"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#pablo" class="text-white mr-3"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="text-white"><i class="fa fa-google-plus"></i></a>
+                  </div><!-- end social-line --> 
+                </div><!-- end header -->
+
+                <div class="card-block">
+                  <div class="content p-4">
+                    <!-- login plugin -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>  
+                  </div><!-- end content -->
+                </div><!-- end card-block -->
+                
+              </div><!-- end card -->
+            </div><!-- end col -->
+
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+
+    <!-- Load the CDN jQuery first -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>window.jQuery || document.write('<script src="../assets/js/jquery-3.2.1.js"><\/script>');</script>
+
+    <!-- Tether JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Lightbox Lokeshdhakar JS -->
+    <script src="../assets/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Custom script.JS -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

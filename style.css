@@ -5,6 +5,12 @@
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
 img {
     max-width: 100%;
 }
@@ -46,6 +52,7 @@ img {
 #socket {
    background-color: #333;
 }
+
 
 /* == Home Page == */
 
@@ -108,6 +115,7 @@ img {
 .cover-bg {
    position: relative;
 }
+
 .cover-bg::after {
    display: block;
    position: relative;
@@ -117,6 +125,7 @@ img {
    width: 100%;
    content: '';
 }
+
 .cover-txt {
    position: absolute;
    bottom: 40px;
@@ -283,6 +292,38 @@ div.comment {
    display: block;
 }
 
+/* == SignUp Page == */
+
+.card-signup .header {
+   border-radius: 5px 5px 0 0;
+}
+
+/* == Portfolio Page == */
+
+.portfolio-group .portfolio-item {
+   position: relative;
+   margin-bottom: 40px;
+}
+
+.portfolio-group .portfolio-item img {
+   align-content: center;
+   display: block;
+   width: 100%;
+}
+
+.portfolio-group .portfolio-item h5 {
+   position: absolute;
+   width: 350px;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, .5);
+   padding: 4px 0;
+   text-align: center;
+   font-weight: bold;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, .85);
+   color: #fff;
+   margin: 0;
+}
+
 
 /* --------------------------------------
    Typography
@@ -311,9 +352,10 @@ div.comment {
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
-/* == Portrait & landscape phone == */
-@media (max-width: 480px) {
-   
+
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (max-width: 480px) {
+
    .carousel-caption p {
       font-size: 12px;
    }
@@ -335,6 +377,108 @@ div.comment {
       height: 250px;
    }
 
+   .cover-txt h2 {
+      font-size: 1rem;
+   }
+
+   .cover-txt h1 {
+      font-size: 1.5rem;
+   }
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 568px) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) { 
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) { 
+
+}
+
+/* ----------- iPad mini ----------- */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
+
+}
+
+/* ----------- iPad 1 and 2 ----------- */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
+
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
+
+}
+
+/* ----------- Large Screens ----------- */
+@media only screen and (min-width: 1200px) { 
+
+}
+
+
+
+/* == Portrait & landscape phone == */
+@media (max-width: 480px) {
+   
+   /*.carousel-caption p {
+      font-size: 12px;
+   }
+   
+   .carousel-caption h3 {
+      font-size: 18px;
+   }
+
+   .homeGallery {
+      margin-top: 2rem;
+   }
+
+   .card {
+      margin: 2rem;
+   }
+
+   img.profile-image {
+      width:250px;
+      height: 250px;
+   }
+
+   .cover-txt h2 {
+      font-size: 1rem;
+   }
+
+   .cover-txt h1 {
+      font-size: 1.4rem;
+   }*/
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+   /*.cover-txt h2 {
+      font-size: 2rem;
+   }
+
+   .cover-txt h1 {
+      font-size: 2.5rem;
+   }*/
 }
 
 @media (min-width: 576px) {
@@ -367,6 +511,31 @@ div.comment {
 
 }
 
+@media (min-width: 769px) and (max-width: 990px) {
+
+   .cover-txt h2 {
+      font-size: 2.5rem;
+   }
+
+   .cover-txt h1 {
+      font-size: 3rem;
+   }
+
+}
+
+@media (min-width: 576px) {
+
+   .tx-expenses {
+      padding: 1.5rem;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      border-width: .2rem;
+   }
+
+}
+
+
 /* == Landscape tablet to portrait small desktop == */
 @media (max-width: 991px) {
    
@@ -388,3 +557,4 @@ small.excerpt {
 .text-box {
    box-shadow: 0 0 8px rgba(0, 0, 0,.18), 0 8px 16px rgba(0, 0, 0,.36);
 }
+
