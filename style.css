@@ -309,33 +309,12 @@ div.comment {
 
 /* == Portfolio Page == */
 
-.portfolio-group .portfolio-item {
-   position: relative;
-   margin-bottom: 40px;
-}
 
-.portfolio-group .portfolio-item img {
-   align-content: center;
-   display: block;
-   width: 100%;
-}
-
-.portfolio-group .portfolio-item h5 {
-   position: absolute;
-   width: 350px;
-   bottom: 0;
-   background-color: rgba(0, 0, 0, .5);
-   padding: 4px 0;
-   text-align: center;
-   font-weight: bold;
-   text-shadow: 1px 1px 1px rgba(0, 0, 0, .85);
-   color: #fff;
-   margin: 0;
-}
 
 /* == Profile Page == */
-#profile-page .profile {
-   text-align: center;
+#profile-page .profile img {
+   max-width: 160px;
+   margin: -160px auto 0;
 }
 
 
@@ -441,10 +420,6 @@ div.comment {
       font-size: 1.5rem;
    }
 
-   .portfolio-group .portfolio-item h5 {
-      display: none;
-   }
-
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -457,9 +432,6 @@ div.comment {
       font-size: 1.8rem;
    }
 
-   .portfolio-group .portfolio-item h5 {
-      width: 240px;
-   }
 }
 
 @media (min-width: 576px) {
@@ -490,10 +462,6 @@ div.comment {
       margin-top: 2rem;
    }
 
-   /*.portfolio-group .portfolio-item h5 {
-      width: 240px;
-   }
-*/
 }
 
 /* == Landscape tablet to portrait small desktop == */
@@ -507,17 +475,11 @@ div.comment {
       font-size: 2.2rem;
    }
 
-   .portfolio-group .portfolio-item h5 {
-      width: 210px;
-   }
-
 }
 
 /* == Large desktop == */
 @media (min-width: 992px) and (max-width: 1199px) {
-   .portfolio-group .portfolio-item h5 {
-      width: 290px;
-   }
+
 }
 
 

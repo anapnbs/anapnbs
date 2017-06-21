@@ -58,6 +58,7 @@
               <a href="post.html" class="dropdown-item">Post</a>
               <a href="portfolio-page.html" class="dropdown-item">Portfolio Page</a>
               <a href="portfolio.html" class="dropdown-item">Portfolio</a>
+              <a href="profile.html" class="dropdown-item">Profile</a>
             </div><!-- end dropdown-menu -->
           </li>
           <li class="nav-item">
@@ -140,6 +141,11 @@
             <div class="cover-bg">
               <img src="https://mdbootstrap.com/img/Photos/Others/img%20%285%29.jpg" class="img-fluid img-raised">
             </div><!-- end cover-bg -->
+
+            <div class="cover-txt text-center">
+              <h1 class="display-3 text-white mb-5">Author Profile</h1>
+            </div><!-- end cover-txt -->
+
           </div><!-- end col -->
 
         </div><!-- end row -->
@@ -148,26 +154,95 @@
 
     <!-- PAGE SECTION
     ====================================================== -->
-    <section id="profile-page" class="main">
+    <section id="profile-page">
       <div class="section-content">
         <div class="container">
           <div class="row">
 
-            <div class="profile">
-              <div class="avatar">
-                <img src="../img/christian.jpg" alt="Circle Image" class="rounded-circle img-fluid img-raised">
-              </div><!-- end avatar -->
-              <div class="name text-center">
-                <h3 class="title">Christian Louboutin</h3>
-                <h6>Designer</h6>
-              </div><!-- end name -->
-            </div><!-- end profile -->
+            <div class="col-md-4 offset-md-4">
+              <div class="profile text-center">
+                <div class="avatar mb-4">
+                  <img src="../img/christian.jpg" alt="Circle Image" class="rounded-circle img-fluid img-raised">
+                </div><!-- end avatar -->
+                <div class="name text-center mb-4">
+                  <h3 class="title">Christian Louboutin</h3>
+                  <h6>Designer</h6>
+                </div><!-- end name -->
+              </div><!-- end profile -->
+            </div><!-- end name -->
+
+            <div class="description text-center mb-5">
+              <p class="lead text-gray">An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+            </div><!-- /.description -->
+            
+            <br>
             
             <!-- MAIN
             ====================================================== -->
-            <article class="col-md-10 offset-md-1">
-              
-              
+            <article class="col-md-6 offset-md-3">
+                            
+              <ul class="nav nav-pills justify-content-center text-center" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#office" role="tab"><i class="fa fa-user-md fa-3x" aria-hidden="true"></i><br> Dr's office</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#scene" role="tab"><i class="fa fa-hospital-o fa-3x" aria-hidden="true"></i><br> Tx Scene</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#ordinary" role="tab"><i class="fa fa-life-ring fa-3x" aria-hidden="true"></i><br> Ordinary</a>
+                </li>
+              </ul><!-- end Nav tabs -->
+
+              <br>
+
+              <div class="tab-content my-4">
+                <div class="tab-pane active" id="office" role="tabpanel">
+                  
+                  <div class="row">
+                    <div class="col-md-6"> 
+                      <img src="../img/examples/chris1.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris0.jpg" class="rounded img-raised img-fluid my-3" />
+                    </div><!-- end col1 -->
+                    <div class="col-md-6">
+                      <img src="../img/examples/chris3.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris4.jpg" class="rounded img-raised img-fluid my-3" />
+                    </div><!-- end col1 -->
+                  </div><!-- end row -->
+
+                </div><!-- end tab-pane: office -->
+
+                <div class="tab-pane" id="scene" role="tabpanel">
+                  
+                  <div class="row">
+                    <div class="col-md-6"> 
+                      <img src="../img/examples/chris5.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris7.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris9.jpg" class="rounded img-raised img-fluid my-3" />
+                    </div><!-- end col1 -->
+                    <div class="col-md-6">
+                      <img src="../img/examples/chris6.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris8.jpg" class="rounded img-raised img-fluid my-3" />
+                    </div><!-- end col2 -->
+                  </div><!-- end row -->
+
+                </div><!-- end tab-pane: tx-scene -->
+
+                <div class="tab-pane" id="ordinary" role="tabpanel">
+                  
+                  <div class="row">
+                    <div class="col-md-6"> 
+                      <img src="../img/examples/chris4.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris6.jpg" class="rounded img-raised img-fluid my-3" />
+                    </div><!-- end col1 -->
+                    <div class="col-md-6">
+                      <img src="../img/examples/chris7.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris5.jpg" class="rounded img-raised img-fluid my-3" />
+                      <img src="../img/examples/chris9.jpg" class="rounded img-raised img-fluid my-3" />
+                    </div><!-- end col1 -->
+                  </div><!-- end row -->
+
+                </div><!-- end tab-pane: ordinary -->
+              </div><!-- end Tab panes -->
 
               <br class="hidden-xl-up">
               <hr class="hidden-xl-up">

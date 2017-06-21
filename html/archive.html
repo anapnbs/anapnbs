@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon.png">
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Post</title>
+    <title>Archive</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
     <!-- Bootstrap CSS -->
@@ -49,11 +49,11 @@
           <li class="nav-item">
             <a href="program.html" class="nav-link">Program</a>
           </li>
-          <li class="nav-item">
-            <a href="blog.html" class="nav-link">Blog</a>
+          <li class="nav-item active">
+            <a href="blog.html" class="nav-link">Blog <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item dropdown active">
-            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link <span class="sr-only">(current)</span></a>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
               <a href="post.html" class="dropdown-item">Post</a>
               <a href="portfolio-page.html" class="dropdown-item">Portfolio Page</a>
@@ -64,17 +64,17 @@
           <li class="nav-item">
             <a href="reservation.html" class="nav-link">Reservation</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-contact">Contact</a>
-          </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link btn btn-danger" data-toggle="modal" data-target="#modal-contact">Contact</a>
+          </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
               <a href="#" class="dropdown-item">Setting</a>
               <a href="#" class="dropdown-item">Profile</a>
-              <a href="#" class="dropdown-item">Sign Out</a>
+              <a href="signup.html" class="dropdown-item">Sign In</a>
             </div><!-- end dropdown-menu -->
           </li>
         </ul>
@@ -132,77 +132,185 @@
     </div><!-- end modal-contact -->
 
 
-    <!-- POST SECTION
+    <!-- ARCHIVES SECTION
     ====================================================== -->
-    <section id="post-page" class="main">
+    <section id="archive-page" class="main">
       <div class="section-content">
         <div class="container">
+          
+          <!-- PAGE-HEADER
+          ====================================================== -->
+          <div class="row page-header mb-4 pb-2">
+            <div class="col-md-6 col-sm-8 col-xs-8">
+              <ul class="breadcrumb p-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Archive</li>
+              </ul>
+            </div><!-- end col:breadcrumb -->
+
+            <div class="col-md-6 col-sm-4 col-xs-4">
+              <div class="pull-right">
+                <a href="#" rel="next"><i class="fa fa-arrow-left" aria-hiddent="true"> </i></a>
+                <a href="#" rel="prev"><i class="fa fa-arrow-right" aria-hiddent="true"> </i></a>
+              </div>
+            </div><!-- end col:arrow -->
+          </div><!-- end first-row -->
+
+          <!-- MAIN
+          ====================================================== -->
           <div class="row">
             
-            <!-- MAIN
-            ====================================================== -->
             <article class="col-xl-8 col-md-12">
-              
-              <div class="embed-responsive embed-responsive-16by9"> 
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/204894400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              </div>
 
-              <h1 class="h1-responsive mt-5 mb-4">This is a title of the news.</h1>
-
-              <div class="post-meta">
-                <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
-              </div><!-- end post-meta -->
-              
-
-              <div class="article-content">
-                <p>Proin tempor id mauris vulputate mattis. Vivamus venenatis felis sed libero posuere. A interdum augue porttitor. Suspendisse eleifend euismod purus vel tempus. Duis fermentum sapien a justo imperdiet cursus. Etiam porta metus odio.</p>
-
-                <p>Aenean id tellus in libero porta ultricies. Donec viverra interdum bibendum. Sed varius nunc tortor, tempus accumsan massa aliquam sed. Quisque a turpis ut dolor porta auctor a sed risus. Quisque turpis arcu, congue in tincidunt quis, feugiat a erat. Vivamus tincidunt semper ultricies. Integer sit amet facilisis quam. Sed vitae nibh odio. Sed nec neque id nunc ornare rhoncus. Donec congue accumsan justo, vitae mollis ipsum pharetra eu.</p>
-
-                <blockquote class="blockquote">
-                  <h4 class="m-b-0">tempus accumsan massa aliquam sed.</h4>
-                </blockquote>
-
-                <p>Praesent posuere libero eu justo tristique, vitae ultricies justo volutpat. Sed pellentesque neque eu neque adipiscing condimentum. In hac habitasse platea dictumst. Aliquam fermentum mollis orci aliquam dictum. Proin auctor quis enim ut tempor. Integer convallis convallis interdum. Quisque eget libero ac dolor pharetra vestibulum. Nulla posuere orci at justo vehicula porta.</p>
-
-                <br>
-
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2891%29.jpg" class="img-fluid img-raised">
-
-                <br><br><br>
-
-                <p>Mauris ut nibh enim. In feugiat sagittis varius. Praesent pharetra ipsum enim, a fermentum arcu lobortis ut. Vestibulum cursus risus at massa faucibus consectetur.</p>
-
-                <h4><strong>In hac habitasse platea dictumst</strong></h4>
-
-                <p>Vivamus et eleifend massa. Suspendisse nec arcu et ligula posuere aliquam. Integer quis arcu vitae nisi sodales tincidunt.</p>
-
-                <ol>
-                    <li>Vestibulum ante ipsum primis in faucibus</li>
-                    <li>Integer non placerat diam, id ornare est. Curabitur sit amet lectus vitae urna dictum tincidunt vel vitae</li>
-                    <li>Integer dictum magna vitae ullamcorper sodales</li>
-                    <li>Proin elementum ante quis mauris</li>
-                </ol>
-
-                <p>Praesent pretium, massa ut consequat commodo, libero turpis dignissim lacus, facilisis porttitor risus mi vitae purus. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-              </div><!-- end article-content -->
-
-              <br>
-              <hr>
-              <br>
-              
-              <!-- SOCIAL ICON
-              ====================================================== -->
-              <div class="article-footer text-center">
+              <div class="archive-item mb-5">
                 
-                <h3 class="h3-responsive mb-4">Do you want to share?</h3>
-                <a href="https://www.facebook.com/anapnbs" target="_blank" class="mx-2 badge social facebook"><i class="fa fa-facebook"> </i></a>
-                <a href="https://plus.google.com/u/0/+Mdbootstrap" target="_blank" class="mx-2 badge social gplus"><i class="fa fa-google-plus"> </i></a>
-                <a href="https://twitter.com/anapnbs" target="_blank" class="mx-2 badge social twitter"><i class="fa fa-twitter"> </i></a>
-                <a href="https://pinterest.com/anapnb" target="_blank" class="mx-2 badge social pinterest"><i class="fa fa-pinterest"> </i></a>
-                <a href="https://instagram/com/omdgi" target="_blank" class="mx-2 badge social instagram"><i class="fa fa-instagram"> </i></a>
+                <div class="row">
 
-              </div><!-- end article-footer -->
+                  <div class="col-md-5">
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised"></a>
+                  </div><!-- end col:featured-image -->
+
+                  <div class="col-md-7">
+                    <a href="#"><h3 class="h3-responsive mb-3">This is a title of news.</h3></a>
+                    <div class="archive-excerpt">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quibusdam, eaque. Labore soluta quidem ad in impedit non qui vel, expedita autem, omnis! Quidem in magni consequatur.<span class="text-warning"> Read more..</span></p>
+                    </div><!-- end archive-excerpt -->
+                  </div><!-- end col:archive-content -->
+
+                </div><!-- end row -->
+
+                <div class="post-meta">
+                  <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
+                </div><!-- end post-meta -->
+
+              </div><!-- end archive-item -->
+
+              <br>
+
+              <div class="archive-item mb-5">
+                
+                <div class="row">
+
+                  <div class="col-md-5">
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised"></a>
+                  </div><!-- end col:featured-image -->
+
+                  <div class="col-md-7">
+                    <a href="#"><h3 class="h3-responsive mb-3">This is a title of news.</h3></a>
+                    <div class="archive-excerpt">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quibusdam, eaque. Labore soluta quidem ad.<span class="text-warning"> Read more..</span></p>
+                    </div><!-- end archive-excerpt -->
+                  </div><!-- end col:archive-content -->
+
+                </div><!-- end row -->
+
+                <div class="post-meta">
+                  <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
+                </div><!-- end post-meta -->
+
+              </div><!-- end archive-item -->
+
+              <br>
+
+              <div class="archive-item mb-5">
+                
+                <div class="row">
+
+                  <div class="col-md-5">
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised"></a>
+                  </div><!-- end col:featured-image -->
+
+                  <div class="col-md-7">
+                    <a href="#"><h3 class="h3-responsive mb-3">This is a title of news.</h3></a>
+                    <div class="archive-excerpt">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quibusdam, eaque. Labore soluta quidem ad.<span class="text-warning"> Read more..</span></p>
+                    </div><!-- end archive-excerpt -->
+                  </div><!-- end col:archive-content -->
+
+                </div><!-- end row -->
+
+                <div class="post-meta">
+                  <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
+                </div><!-- end post-meta -->
+
+              </div><!-- end archive-item -->
+
+              <br>
+
+              <div class="archive-item mb-5">
+                
+                <div class="row">
+
+                  <div class="col-md-5">
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised"></a>
+                  </div><!-- end col:featured-image -->
+
+                  <div class="col-md-7">
+                    <a href="#"><h3 class="h3-responsive mb-3">This is a title of news.</h3></a>
+                    <div class="archive-excerpt">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quibusdam, eaque. Labore soluta quidem ad.<span class="text-warning"> Read more..</span></p>
+                    </div><!-- end archive-excerpt -->
+                  </div><!-- end col:archive-content -->
+
+                </div><!-- end row -->
+
+                <div class="post-meta">
+                  <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
+                </div><!-- end post-meta -->
+
+              </div><!-- end archive-item -->
+
+              <br>
+
+              <div class="archive-item mb-5">
+                
+                <div class="row">
+
+                  <div class="col-md-5">
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised"></a>
+                  </div><!-- end col:featured-image -->
+
+                  <div class="col-md-7">
+                    <a href="#"><h3 class="h3-responsive mb-3">This is a title of news.</h3></a>
+                    <div class="archive-excerpt">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quibusdam, eaque. Labore soluta quidem ad.<span class="text-warning"> Read more..</span></p>
+                    </div><!-- end archive-excerpt -->
+                  </div><!-- end col:archive-content -->
+
+                </div><!-- end row -->
+
+                <div class="post-meta">
+                  <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
+                </div><!-- end post-meta -->
+
+              </div><!-- end archive-item -->
+
+              <br>
+
+              <div class="archive-item mb-5">
+                
+                <div class="row">
+
+                  <div class="col-md-5">
+                    <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised"></a>
+                  </div><!-- end col:featured-image -->
+
+                  <div class="col-md-7">
+                    <a href="#"><h3 class="h3-responsive mb-3">This is a title of news.</h3></a>
+                    <div class="archive-excerpt">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quibusdam, eaque. Labore soluta quidem ad.<span class="text-warning"> Read more..</span></p>
+                    </div><!-- end archive-excerpt -->
+                  </div><!-- end col:archive-content -->
+
+                </div><!-- end row -->
+
+                <div class="post-meta">
+                  <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
+                </div><!-- end post-meta -->
+
+              </div><!-- end archive-item -->
+
+              <br>
 
 
               <!-- ABOUT AUTHOR 
@@ -231,71 +339,6 @@
               </div><!-- end author-box -->
 
               <br>
-
-              <div class="divider-new">
-                <h3 class="h3-responsive">RELATED PORTFROLIO</h3>
-              </div>
-
-              <!-- RELATED POSTS
-              ====================================================== -->
-              <div class="related-posts">
-                
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination pagination-sm justify-content-end">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">Next</a>
-                    </li>
-                  </ul>
-                </nav><!-- end pagination -->
-
-                <hr>
-
-                <div class="row">
-                  
-                  <div class="col-md-4">
-                    
-                    <div class="card">
-                      <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%2817%29.jpg" alt="Card image cap"></a>
-                      <p class="text-center p-3">Title - Nam libero tempore.</p>
-                    </div><!-- end card -->
-
-                  </div><!-- end col: First column -->
-
-                  <div class="col-md-4">
-                    
-                    <div class="card">
-                      <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%2854%29.jpg" alt="Card image cap"></a>
-                      <p class="text-center p-3">Title - Nam libero tempore.</p>
-                    </div><!-- end card -->
-
-                  </div><!-- end col: Second column -->
-
-                  <div class="col-md-4">
-                    
-                    <div class="card">
-                      <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%286%29.jpg" alt="Card image cap"></a>
-                      <p class="text-center p-3">Title - Nam libero tempore.</p>
-                    </div><!-- end card -->
-
-                  </div><!-- end col: Third column -->
-
-                </div><!-- end row -->
-
-              </div><!-- end related-posts -->
-
-              <hr><br>
-
-              <!-- COMMENTS
-              ====================================================== -->
-              <div class="comment">
-                This is comment section. Replace with disqus plugin!
-              </div>
 
             </article><!-- end col:main -->
 
@@ -526,9 +569,9 @@
 
               </div><!-- end widget -->
 
-            </aside><!-- end col:sidebar -->
+            </aside><!-- end col: sidebar -->
 
-          </div><!-- end row -->
+          </div><!-- end second-row -->
         </div><!-- end container -->
       </div><!-- end section-content -->
     </section>
