@@ -44,6 +44,9 @@
             <a href="clinic.html" class="nav-link">Clinic</a>
           </li>
           <li class="nav-item">
+            <a href="treatment.html" class="nav-link">Treatment</a>
+          </li>
+          <li class="nav-item">
             <a href="program.html" class="nav-link">Program</a>
           </li>
           <li class="nav-item active">
@@ -52,25 +55,25 @@
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
-              <a href="#" class="dropdown-item">Action</a>
-              <a href="#" class="dropdown-item">Another Action</a>
-              <a href="#" class="dropdown-item">Else</a>
+              <a href="post.html" class="dropdown-item">Post</a>
+              <a href="portfolio-page.html" class="dropdown-item">Portfolio Page</a>
+              <a href="portfolio.html" class="dropdown-item">Portfolio</a>
             </div><!-- end dropdown-menu -->
           </li>
           <li class="nav-item">
             <a href="reservation.html" class="nav-link">Reservation</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-contact">Contact</a>
-          </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link btn btn-danger" data-toggle="modal" data-target="#modal-contact">Contact</a>
+          </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
               <a href="#" class="dropdown-item">Setting</a>
               <a href="#" class="dropdown-item">Profile</a>
-              <a href="#" class="dropdown-item">Sign Out</a>
+              <a href="signup.html" class="dropdown-item">Sign In</a>
             </div><!-- end dropdown-menu -->
           </li>
         </ul>
@@ -133,17 +136,36 @@
     <section id="post-page" class="main">
       <div class="section-content">
         <div class="container">
+          
+          <!-- PAGE-HEADER
+          ====================================================== -->
+          <div class="row page-header mb-4 pb-2">
+            <div class="col-md-6 col-sm-8 col-xs-8">
+              <ul class="breadcrumb p-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Library</li>
+              </ul>
+            </div><!-- end col:breadcrumb -->
+
+            <div class="col-md-6 col-sm-4 col-xs-4">
+              <div class="pull-right">
+                <a href="#" rel="next"><i class="fa fa-arrow-left" aria-hiddent="true"> </i></a>
+                <a href="#" rel="prev"><i class="fa fa-arrow-right" aria-hiddent="true"> </i></a>
+              </div>
+            </div><!-- end col:arrow -->
+          </div><!-- end first-row -->
+
+          <!-- MAIN
+          ====================================================== -->
           <div class="row">
             
-            <!-- MAIN
-            ====================================================== -->
             <article class="col-xl-8 col-md-12">
               
               <div class="featured-image">
                 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised">
               </div><!-- end featured-image -->
 
-              <h1 class="h1-responsive mt-5 mb-4">This is a title of the news.</h1>
+              <h1 class="h1-responsive mt-5 mb-4">This is a title of news.</h1>
 
               <div class="post-meta">
                 <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
@@ -520,9 +542,9 @@
 
               </div><!-- end widget -->
 
-            </aside><!-- end col:sidebar -->
+            </aside><!-- end col: sidebar -->
 
-          </div><!-- end row -->
+          </div><!-- end second-row -->
         </div><!-- end container -->
       </div><!-- end section-content -->
     </section>

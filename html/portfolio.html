@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon.png">
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Portfolio Page</title>
+    <title>Portfolio item page</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
     <!-- Bootstrap CSS -->
@@ -44,6 +44,9 @@
             <a href="clinic.html" class="nav-link">Clinic</a>
           </li>
           <li class="nav-item">
+            <a href="treatment.html" class="nav-link">Treatment</a>
+          </li>
+          <li class="nav-item">
             <a href="program.html" class="nav-link">Program</a>
           </li>
           <li class="nav-item active">
@@ -52,19 +55,19 @@
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
-              <a href="#" class="dropdown-item">Action</a>
-              <a href="#" class="dropdown-item">Another Action</a>
-              <a href="#" class="dropdown-item">Else</a>
+              <a href="post.html" class="dropdown-item">Post</a>
+              <a href="portfolio-page.html" class="dropdown-item">Portfolio Page</a>
+              <a href="portfolio.html" class="dropdown-item">Portfolio</a>
             </div><!-- end dropdown-menu -->
           </li>
           <li class="nav-item">
             <a href="reservation.html" class="nav-link">Reservation</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-contact">Contact</a>
-          </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link btn btn-danger" data-toggle="modal" data-target="#modal-contact">Contact</a>
+          </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
@@ -127,91 +130,419 @@
       </div><!-- end modal-dialog -->
     </div><!-- end modal-contact -->
 
-    <!-- JUMBOTRON
-    ====================================================== -->
-    <section id="jumbotron" class="text-center mb-0">
-      
-      <div class="container">
-        <h1 class="display-4 text-white">Portfolio Page</h1>
-        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="hr-light my-4"></div>
-        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi est, aliquid inventore quo architecto qui ipsum nisi distinctio neque?</p>
-        <br>
-        <a href="#" class="btn btn-lg btn-primary">Learn more...</a>
-      </div><!-- end container -->
 
-    </section>
-
-    <!-- SECTION1 : TEXT-CONTENT
+    <!-- PORTFOLIO SECTION
     ====================================================== -->
-    <section>
+    <section id="portfolio-page" class="main">
       <div class="section-content">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="text-center mb-4">This is Portfolio Page</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem, error numquam sed iusto possimus omnis quo reiciendis veritatis accusantium laborum alias delectus distinctio rem, labore deleniti rerum quidem harum!</p> 
-            </div><!-- end col -->
-          </div><!--end row -->
-        </div><!-- end container -->
-      </div><!-- end section-content -->
-    </section>
 
-    
-    <!-- SECTION2 : PORTFOLIO-CONTENT
-    ====================================================== -->
-    <section class="portfolio-group">
-      <div class="section-content">
-        <div class="container">
+          <!-- PAGE-HEADER
+          ====================================================== -->
+          <div class="row page-header mb-4 pb-2">
+            <div class="col-md-6 col-sm-8 col-xs-8">
+              <ul class="breadcrumb p-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Library</li>
+              </ul>
+            </div><!-- end col:breadcrumb -->
+
+            <div class="col-md-6 col-sm-4 col-xs-4">
+              <div class="pull-right">
+                <a href="#" rel="next"><i class="fa fa-arrow-left" aria-hiddent="true"> </i></a>
+                <a href="#" rel="prev"><i class="fa fa-arrow-right" aria-hiddent="true"> </i></a>
+              </div>
+            </div><!-- end col:arrow -->
+          </div><!-- end first-row -->
+
+          <!-- MAIN
+          ====================================================== -->
           <div class="row">
+           
+            <article class="col-xl-8 col-md-12">
+              
+              <div class="featured-image">
+                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" class="img-fluid img-raised">
+              </div><!-- end featured-image -->
+
+              <h1 class="h1-responsive mt-5 mb-4">This is a title of the portfolio.</h1>
+
+              <div class="post-meta">
+                <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
+              </div><!-- end post-meta -->
+              
+
+              <div class="article-content">
+                <p>Proin tempor id mauris vulputate mattis. Vivamus venenatis felis sed libero posuere. A interdum augue porttitor. Suspendisse eleifend euismod purus vel tempus. Duis fermentum sapien a justo imperdiet cursus. Etiam porta metus odio.</p>
+
+                <p>Aenean id tellus in libero porta ultricies. Donec viverra interdum bibendum. Sed varius nunc tortor, tempus accumsan massa aliquam sed. Quisque a turpis ut dolor porta auctor a sed risus. Quisque turpis arcu, congue in tincidunt quis, feugiat a erat. Vivamus tincidunt semper ultricies. Integer sit amet facilisis quam. Sed vitae nibh odio. Sed nec neque id nunc ornare rhoncus. Donec congue accumsan justo, vitae mollis ipsum pharetra eu.</p>
+
+                <blockquote class="blockquote">
+                  <h4 class="m-b-0">tempus accumsan massa aliquam sed.</h4>
+                </blockquote>
+
+                <p>Praesent posuere libero eu justo tristique, vitae ultricies justo volutpat. Sed pellentesque neque eu neque adipiscing condimentum. In hac habitasse platea dictumst. Aliquam fermentum mollis orci aliquam dictum. Proin auctor quis enim ut tempor. Integer convallis convallis interdum. Quisque eget libero ac dolor pharetra vestibulum. Nulla posuere orci at justo vehicula porta.</p>
+
+                <br>
+
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2891%29.jpg" class="img-fluid img-raised">
+
+                <br><br><br>
+
+                <p>Mauris ut nibh enim. In feugiat sagittis varius. Praesent pharetra ipsum enim, a fermentum arcu lobortis ut. Vestibulum cursus risus at massa faucibus consectetur.</p>
+
+                <h4><strong>In hac habitasse platea dictumst</strong></h4>
+
+                <p>Vivamus et eleifend massa. Suspendisse nec arcu et ligula posuere aliquam. Integer quis arcu vitae nisi sodales tincidunt.</p>
+
+                <ol>
+                    <li>Vestibulum ante ipsum primis in faucibus</li>
+                    <li>Integer non placerat diam, id ornare est. Curabitur sit amet lectus vitae urna dictum tincidunt vel vitae</li>
+                    <li>Integer dictum magna vitae ullamcorper sodales</li>
+                    <li>Proin elementum ante quis mauris</li>
+                </ol>
+
+                <p>Praesent pretium, massa ut consequat commodo, libero turpis dignissim lacus, facilisis porttitor risus mi vitae purus. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+              </div><!-- end article-content -->
+
+              <br>
+              <hr>
+              <br>
+              
+              <!-- SOCIAL ICON
+              ====================================================== -->
+              <div class="article-footer text-center">
+                
+                <h3 class="h3-responsive mb-4">Do you want to share?</h3>
+                <a href="https://www.facebook.com/anapnbs" target="_blank" class="mx-2 badge social facebook"><i class="fa fa-facebook"> </i></a>
+                <a href="https://plus.google.com/u/0/+Mdbootstrap" target="_blank" class="mx-2 badge social gplus"><i class="fa fa-google-plus"> </i></a>
+                <a href="https://twitter.com/anapnbs" target="_blank" class="mx-2 badge social twitter"><i class="fa fa-twitter"> </i></a>
+                <a href="https://pinterest.com/anapnb" target="_blank" class="mx-2 badge social pinterest"><i class="fa fa-pinterest"> </i></a>
+                <a href="https://instagram/com/omdgi" target="_blank" class="mx-2 badge social instagram"><i class="fa fa-instagram"> </i></a>
+
+              </div><!-- end article-footer -->
+
+
+              <!-- ABOUT AUTHOR 
+              ====================================================== -->
+              <div class="author-box main p-4 my-4">
+                
+                <h3 class="h3-responsive text-center">About author</h3>
+                <hr>
+                <div class="row">
+                    
+                  <div class="col-12 col-sm-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg" class="img-fluid rounded-circle img-raised z-depth-2">
+                  </div><!-- end col: Avatar-->
+                  
+                  <div class="col-12 col-sm-10">
+                    <div class="personal-sm">
+                      <p><strong>Hwang Tae-hyun</strong> <span class="float-right"><a href="http://omdgi.blog.me"><i class="fa fa-newspaper-o"></i></button></a> 
+                      <a href="mailto:anapnbs@gmail.com"><i class="fa fa-envelope-o"> </i></a></span></p>
+                      
+                    </div><!-- end personal-sm -->
+                    
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+                  </div><!-- end col: Author Data -->
+
+                </div><!-- end row -->
+              </div><!-- end author-box -->
+
+              <br>
+
+              <!-- RELATED PORTFOLIO
+              ====================================================== -->
+              <div class="related-portfolios">
+                
+                <h3 class="text-center mt-5">RELATED PORTFROLIO</h3>
+                
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav><!-- end pagination -->
+
+                <hr>
+
+                <div class="row">
+                  
+                  <div class="col-md-4">
+                    
+                    <div class="card mb-3">
+                      <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%2817%29.jpg" alt="Card image cap"></a>
+                      <p class="text-center p-3">Title - Nam libero tempore.</p>
+                    </div><!-- end card -->
+
+                  </div><!-- end col: First column -->
+
+                  <div class="col-md-4 mb-3">
+                    
+                    <div class="card">
+                      <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%2854%29.jpg" alt="Card image cap"></a>
+                      <p class="text-center p-3">Title - Nam libero tempore.</p>
+                    </div><!-- end card -->
+
+                  </div><!-- end col: Second column -->
+
+                  <div class="col-md-4 mb-3">
+                    
+                    <div class="card">
+                      <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%286%29.jpg" alt="Card image cap"></a>
+                      <p class="text-center p-3">Title - Nam libero tempore.</p>
+                    </div><!-- end card -->
+
+                  </div><!-- end col: Third column -->
+
+                </div><!-- end row -->
+
+              </div><!-- end related-posts -->
+
+              <hr><br>
+
+              <!-- COMMENTS
+              ====================================================== -->
+              <div class="comment">
+                This is comment section. Replace with disqus plugin!
+              </div>
+
+            </article><!-- end col:main -->
+
             
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+            <!-- SIDEBAR
+            ====================================================== -->
+            <aside class="col-xl-4 col-md-12 widget-column">
+              
+              <div class="widget hidden-xs-down">
+                <form class="form-block row justify-content-center my-2 my-lg-0">
+                  <input class="form-control col-8 mr-sm-2" type="text" placeholder="Search...">
+                  <button class="btn btn-outline-primary col-3 my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div><!-- widget -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+              <div class="widget">
+                <div class="card p-3">
+                  <h4>Join our Mailing List</h4>
+                  <p>Keep up-to-date with the latest news, and we'll <strong>send you something special as a thank you!</strong></p>
+                  <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#modal-contact">
+                    Click here to subscribe
+                  </button>
+                </div><!-- end card -->
+              </div><!-- widget -->
+              
+              <div class="widget">
+                <div class="card card-inverse card-warning p-3">
+                  <h4><strong>About Bootstrap to Wordpress</strong></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div><!-- widget -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+              <div class="widget">
+                
+                <div class="text-box bg-info mb-4">
+                  <p class="lead text-white text-center py-2">Featured Posts</p>
+                </div><!-- end text-box -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                <div class="single-news">
+                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%2833%29.jpg" class="img-raised"></a>
+                  <div class="news-data mt-4">
+                    <p class="text-left"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong><span class="badge badge-default float-right">12</span></p>
+                    <h6>The Featured title here!</h6>
+                    <hr class="hr-light">
+                  </div><!-- end news-data -->
+                </div><!-- end single-news -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                <div class="single-news">
+                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%2833%29.jpg" class="img-raised"></a>
+                  <div class="news-data mt-4">
+                    <p class="text-left"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong><span class="badge badge-default float-right">12</span></p>
+                    <h6>The Featured title here!</h6>
+                    <hr class="hr-light">
+                  </div><!-- end news-data -->
+                </div><!-- end single-news -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                <div class="single-news">
+                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%2833%29.jpg" class="img-raised"></a>
+                  <div class="news-data mt-4">
+                    <p class="text-left"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong><span class="badge badge-default float-right">12</span></p>
+                    <h6>The Featured title here!</h6>
+                  </div><!-- end news-data -->
+                </div><!-- end single-news -->
+                  
+              </div><!-- end widget -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+              <div class="widget">
+                
+                <div class="text-box bg-info mb-4">
+                  <p class="lead text-white text-center py-2">Various Posts</p>
+                </div><!-- end text-box -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#popular" role="tab">Popular</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#recent" role="tab">Recent</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#comment" role="tab">Comment</a>
+                  </li>
+                </ul>
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                <!-- Tab panes -->
+                <div class="tab-content mt-4">
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                  <div class="tab-pane fade show active" id="popular" role="tabpanel">
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2891%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>How effectively work in café?</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
 
-            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
-            </div><!-- end portfolio-item -->
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2889%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>Safe summer holidays with kids.</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20%283%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>10 best pizzerias in Europe.</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                  </div><!-- end tab-pane 1 -->
+
+                  <div class="tab-pane fade" id="recent" role="tabpanel">
+                    
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2891%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>How effectively work in café?</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2889%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>Safe summer holidays with kids.</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20%283%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>10 best pizzerias in Europe.</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                  </div><!-- end tab-pane 2 -->
+
+                  <div class="tab-pane fade" id="comment" role="tabpanel">
+                    
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2891%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>How effectively work in café?</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2889%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>Safe summer holidays with kids.</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                    <div class="single-post">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20%283%29.jpg" class="img-fluid img-raised" alt=""></a>
+                        </div><!-- end col-4 -->
+                        <div class="col-8">
+                          <div class="post-data">
+                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
+                            <a href="#"><h6>10 best pizzerias in Europe.</h6></a> 
+                          </div><!-- end post-data -->
+                        </div><!-- end col-8 -->
+                      </div><!-- end row -->
+                    </div><!-- end single-post -->
+
+                  </div><!-- end tab-pane 3 -->
+
+                </div><!-- end tab-content -->
+
+              </div><!-- end widget -->
+
+            </aside><!-- end col:sidebar -->
 
           </div><!-- end row -->
         </div><!-- end container -->

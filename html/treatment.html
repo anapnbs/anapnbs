@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon.png">
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Post</title>
+    <title>Treatment</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
     <!-- Bootstrap CSS -->
@@ -43,37 +43,37 @@
           <li class="nav-item">
             <a href="clinic.html" class="nav-link">Clinic</a>
           </li>
-          <li class="nav-item">
-            <a href="treatment.html" class="nav-link">Treatment</a>
+          <li class="nav-item active">
+            <a href="treatment.html" class="nav-link">Treatment <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a href="program.html" class="nav-link">Program</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="blog.html" class="nav-link">Blog</a>
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
-              <a href="#" class="dropdown-item">Action</a>
-              <a href="#" class="dropdown-item">Another Action</a>
-              <a href="#" class="dropdown-item">Else</a>
+              <a href="post.html" class="dropdown-item">Post</a>
+              <a href="portfolio-page.html" class="dropdown-item">Portfolio Page</a>
+              <a href="portfolio.html" class="dropdown-item">Portfolio</a>
             </div><!-- end dropdown-menu -->
           </li>
           <li class="nav-item">
             <a href="reservation.html" class="nav-link">Reservation</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-contact">Contact</a>
-          </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link btn btn-danger" data-toggle="modal" data-target="#modal-contact">Contact</a>
+          </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</a>
             <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
               <a href="#" class="dropdown-item">Setting</a>
               <a href="#" class="dropdown-item">Profile</a>
-              <a href="#" class="dropdown-item">Sign Out</a>
+              <a href="signup.html" class="dropdown-item">Sign In</a>
             </div><!-- end dropdown-menu -->
           </li>
         </ul>
@@ -130,10 +130,30 @@
       </div><!-- end modal-dialog -->
     </div><!-- end modal-contact -->
 
-
-    <!-- POST SECTION
+    <!-- COVER IMAGE
     ====================================================== -->
-    <section id="post-page" class="main">
+    <section id="cover">      
+      <div class="container-fluid my-3">
+        <div class="row">
+
+          <div class="col-md-12">
+            <div class="cover-bg">
+              <img src="https://mdbootstrap.com/img/Photos/Others/img%20%285%29.jpg" class="img-fluid img-raised">
+            </div><!-- end cover-bg -->
+            
+            <div class="cover-txt">
+              <h2 class="text-warning">Subheading Text here!</h2>
+              <h1 class="display-3 text-white">Six months in Amazon Jungle</h1>
+            </div><!-- end cover-txt -->
+          </div><!-- end col -->
+
+        </div><!-- end row -->
+      </div><!-- end container-fluid -->      
+    </section>
+
+    <!-- CLINIC SECTION
+    ====================================================== -->
+    <section id="clinic" class="main">
       <div class="section-content">
         <div class="container">
           <div class="row">
@@ -142,17 +162,6 @@
             ====================================================== -->
             <article class="col-xl-8 col-md-12">
               
-              <div class="embed-responsive embed-responsive-16by9"> 
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/204894400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              </div>
-
-              <h1 class="h1-responsive mt-5 mb-4">This is a title of the news.</h1>
-
-              <div class="post-meta">
-                <small class="text-center text-muted mb-5"><span class="glyphicon glyphicon-user"></span><a href="#" class="text-muted"><strong> Diana Clark</strong></a> | <span class="glyphicon glyphicon-time"></span> June 27, 2016 | <span class="glyphicon glyphicon-folder-open"></span> <a href="#" class="text-muted"><strong> Vertebra, Disc</strong></a> | <span class="glyphicon glyphicon-tag"></span><a href="#" class="text-muted"><strong> Tag1, Tag2, Tag3</strong></a> | <span class="glyphicon glyphicon-comment"></span><a href="#" class="text-muted"> 4</a></small>  
-              </div><!-- end post-meta -->
-              
-
               <div class="article-content">
                 <p>Proin tempor id mauris vulputate mattis. Vivamus venenatis felis sed libero posuere. A interdum augue porttitor. Suspendisse eleifend euismod purus vel tempus. Duis fermentum sapien a justo imperdiet cursus. Etiam porta metus odio.</p>
 
@@ -187,55 +196,14 @@
               </div><!-- end article-content -->
 
               <br>
-              <hr>
-              <br>
-              
-              <!-- SOCIAL ICON
+
+              <div class="divider-new">
+                <h3 class="h3-responsive">RELATED PORTFROLIO</h3>
+              </div>
+
+              <!-- RELATED PORTFOLIO
               ====================================================== -->
-              <div class="article-footer text-center">
-                
-                <h3 class="h3-responsive mb-4">Do you want to share?</h3>
-                <a href="https://www.facebook.com/anapnbs" target="_blank" class="mx-2 badge social facebook"><i class="fa fa-facebook"> </i></a>
-                <a href="https://plus.google.com/u/0/+Mdbootstrap" target="_blank" class="mx-2 badge social gplus"><i class="fa fa-google-plus"> </i></a>
-                <a href="https://twitter.com/anapnbs" target="_blank" class="mx-2 badge social twitter"><i class="fa fa-twitter"> </i></a>
-                <a href="https://pinterest.com/anapnb" target="_blank" class="mx-2 badge social pinterest"><i class="fa fa-pinterest"> </i></a>
-                <a href="https://instagram/com/omdgi" target="_blank" class="mx-2 badge social instagram"><i class="fa fa-instagram"> </i></a>
-
-              </div><!-- end article-footer -->
-
-
-              <!-- ABOUT AUTHOR 
-              ====================================================== -->
-              <div class="author-box main p-4 my-4">
-                
-                <h3 class="h3-responsive text-center">About author</h3>
-                <hr>
-                <div class="row">
-                    
-                  <div class="col-12 col-sm-2">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg" class="img-fluid rounded-circle img-raised z-depth-2">
-                  </div><!-- end col: Avatar-->
-                  
-                  <div class="col-12 col-sm-10">
-                    <div class="personal-sm">
-                      <p><strong>Hwang Tae-hyun</strong> <span class="float-right"><a href="http://omdgi.blog.me"><i class="fa fa-newspaper-o"></i></button></a> 
-                      <a href="mailto:anapnbs@gmail.com"><i class="fa fa-envelope-o"> </i></a></span></p>
-                      
-                    </div><!-- end personal-sm -->
-                    
-                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
-                  </div><!-- end col: Author Data -->
-
-                </div><!-- end row -->
-              </div><!-- end author-box -->
-
-              <br>
-
-              <!-- RELATED POSTS
-              ====================================================== -->
-              <div class="related-posts">
-                
-                <h3 class="text-center mt-5">RELATED POSTS</h3>
+              <div class="related-portfolios">
                 
                 <nav aria-label="Page navigation example">
                   <ul class="pagination pagination-sm justify-content-end">
@@ -257,7 +225,7 @@
                   
                   <div class="col-md-4">
                     
-                    <div class="card">
+                    <div class="card mb-3">
                       <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%2817%29.jpg" alt="Card image cap"></a>
                       <p class="text-center p-3">Title - Nam libero tempore.</p>
                     </div><!-- end card -->
@@ -266,7 +234,7 @@
 
                   <div class="col-md-4">
                     
-                    <div class="card">
+                    <div class="card mb-3">
                       <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%2854%29.jpg" alt="Card image cap"></a>
                       <p class="text-center p-3">Title - Nam libero tempore.</p>
                     </div><!-- end card -->
@@ -275,7 +243,7 @@
 
                   <div class="col-md-4">
                     
-                    <div class="card">
+                    <div class="card mb-3">
                       <a href="#"><img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%286%29.jpg" alt="Card image cap"></a>
                       <p class="text-center p-3">Title - Nam libero tempore.</p>
                     </div><!-- end card -->
@@ -286,21 +254,17 @@
 
               </div><!-- end related-posts -->
 
-              <hr><br>
-
-              <!-- COMMENTS
-              ====================================================== -->
-              <div class="comment">
-                This is comment section. Replace with disqus plugin!
-              </div>
+              <br class="hidden-xl-up">
+              <hr class="hidden-xl-up">
+              <br class="hidden-xl-up">
 
             </article><!-- end col:main -->
 
-            
+
             <!-- SIDEBAR
             ====================================================== -->
             <aside class="col-xl-4 col-md-12 widget-column">
-              
+    
               <div class="widget hidden-xs-down">
                 <form class="form-block row justify-content-center my-2 my-lg-0">
                   <input class="form-control col-8 mr-sm-2" type="text" placeholder="Search...">
@@ -322,205 +286,88 @@
                 <div class="card card-inverse card-warning p-3">
                   <h4><strong>About Bootstrap to Wordpress</strong></h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+                </div><!-- end card -->
               </div><!-- widget -->
 
               <div class="widget">
-                
-                <div class="text-box bg-info mb-4">
-                  <p class="lead text-white text-center py-2">Featured Posts</p>
-                </div><!-- end text-box -->
+                <div id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                      <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Collapsible Group Item #1
+                        </a>
+                      </h5>
+                    </div>
 
-                <div class="single-news">
-                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%2833%29.jpg" class="img-raised"></a>
-                  <div class="news-data mt-4">
-                    <p class="text-left"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong><span class="badge badge-default float-right">12</span></p>
-                    <h6>The Featured title here!</h6>
-                    <hr class="hr-light">
-                  </div><!-- end news-data -->
-                </div><!-- end single-news -->
-
-                <div class="single-news">
-                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%2833%29.jpg" class="img-raised"></a>
-                  <div class="news-data mt-4">
-                    <p class="text-left"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong><span class="badge badge-default float-right">12</span></p>
-                    <h6>The Featured title here!</h6>
-                    <hr class="hr-light">
-                  </div><!-- end news-data -->
-                </div><!-- end single-news -->
-
-                <div class="single-news">
-                  <a href="#"><img src="https://mdbootstrap.com/img/Photos/Slides/img%20%2833%29.jpg" class="img-raised"></a>
-                  <div class="news-data mt-4">
-                    <p class="text-left"><strong><span class="glyphicon glyphicon-time"></span> 2017-5-31</strong><span class="badge badge-default float-right">12</span></p>
-                    <h6>The Featured title here!</h6>
-                  </div><!-- end news-data -->
-                </div><!-- end single-news -->
-                  
-              </div><!-- end widget -->
-
+                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="card-block">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Collapsible Group Item #2
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="card-block">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                      <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Collapsible Group Item #3
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="card-block">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- widget -->
+              
               <div class="widget">
-                
+            
                 <div class="text-box bg-info mb-4">
-                  <p class="lead text-white text-center py-2">Various Posts</p>
+                  <p class="lead text-white text-center py-2">Gallery</p>
                 </div><!-- end text-box -->
 
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs nav-justified" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#popular" role="tab">Popular</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#recent" role="tab">Recent</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#comment" role="tab">Comment</a>
-                  </li>
-                </ul>
+                <div id="carouselGallery" class="carousel slide" data-ride="carousel">
 
-                <!-- Tab panes -->
-                <div class="tab-content mt-4">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <a href="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" data-lightbox="Gallery2" data-title="Gallery Title"><img class="d-block img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%28108%29.jpg" alt="First slide"></a>
+                    </div><!-- end carousel-item -->
+                    <div class="carousel-item">
+                      <a href="https://mdbootstrap.com/img/Photos/Slides/img%20%28125%29.jpg" data-lightbox="Gallery2" data-title="Gallery Title"><img class="d-block img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%28125%29.jpg" alt="Second slide"></a>
+                    </div><!-- end carousel-item -->
+                    <div class="carousel-item">
+                      <a href="https://mdbootstrap.com/img/Photos/Slides/img%20%28118%29.jpg" data-lightbox="Gallery2" data-title="Gallery Title"><img class="d-block img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20%28118%29.jpg" alt="Third slide"></a>
+                    </div><!-- end carousel-item -->
+                  </div><!-- end carousel-inner -->
 
-                  <div class="tab-pane fade show active" id="popular" role="tabpanel">
+                  <a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
 
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2891%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>How effectively work in café?</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2889%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>Safe summer holidays with kids.</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20%283%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>10 best pizzerias in Europe.</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                  </div><!-- end tab-pane 1 -->
-
-                  <div class="tab-pane fade" id="recent" role="tabpanel">
-                    
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2891%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>How effectively work in café?</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2889%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>Safe summer holidays with kids.</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20%283%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>10 best pizzerias in Europe.</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                  </div><!-- end tab-pane 2 -->
-
-                  <div class="tab-pane fade" id="comment" role="tabpanel">
-                    
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2891%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>How effectively work in café?</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/People/4-col/img%20%2889%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>Safe summer holidays with kids.</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                    <div class="single-post">
-                      <div class="row">
-                        <div class="col-4">
-                          <a href="#"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20%283%29.jpg" class="img-fluid img-raised" alt=""></a>
-                        </div><!-- end col-4 -->
-                        <div class="col-8">
-                          <div class="post-data">
-                            <p class="text-left"><i class="fa fa-clock-o"></i> 20/08/2016 <span class="float-right"><i class="fa fa-comments-o"></i> 145</span></p>
-                            <a href="#"><h6>10 best pizzerias in Europe.</h6></a> 
-                          </div><!-- end post-data -->
-                        </div><!-- end col-8 -->
-                      </div><!-- end row -->
-                    </div><!-- end single-post -->
-
-                  </div><!-- end tab-pane 3 -->
-
-                </div><!-- end tab-content -->
-
+                </div><!-- end carouselGallery -->
+                  
               </div><!-- end widget -->
 
             </aside><!-- end col:sidebar -->

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Portfolio Page</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-glyphicons.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Lightbox Lokeshdhakar CSS -->
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+  </head>
+  <body>
+
+    <!-- Scroll to Top button -->
+    <button onclick="topFunction()" id="scrolltoTop" title="Go to top">Top</button>
+
+    <!-- NAVIGATION MENUS
+    ====================================================== -->
+    <nav class="navbar sticky-top navbar-toggleable-md navbar-inverse bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <a href="#" class="navbar-brnad">
+        <img src="../img/logo_tim.png" class="rounded-circle" alt="Your Logo" width="40px" height="40px">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="clinic.html" class="nav-link">Clinic</a>
+          </li>
+          <li class="nav-item">
+            <a href="treatment.html" class="nav-link">Treatment</a>
+          </li>
+          <li class="nav-item">
+            <a href="program.html" class="nav-link">Program</a>
+          </li>
+          <li class="nav-item active">
+            <a href="blog.html" class="nav-link">Blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link</a>
+            <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
+              <a href="post.html" class="dropdown-item">Post</a>
+              <a href="portfolio-page.html" class="dropdown-item">Portfolio Page</a>
+              <a href="portfolio.html" class="dropdown-item">Portfolio</a>
+            </div><!-- end dropdown-menu -->
+          </li>
+          <li class="nav-item">
+            <a href="reservation.html" class="nav-link">Reservation</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link btn btn-danger" data-toggle="modal" data-target="#modal-contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My account</a>
+            <div class="dropdown-menu" aria-labeledby="navbarDropdownMenuLink">
+              <a href="#" class="dropdown-item">Setting</a>
+              <a href="#" class="dropdown-item">Profile</a>
+              <a href="signup.html" class="dropdown-item">Sign In</a>
+            </div><!-- end dropdown-menu -->
+          </li>
+        </ul>
+      </div><!-- end collapse navbar-collapse -->
+    </nav>
+
+    <!-- MODAL CONTACT
+    ====================================================== -->
+    <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-edit"></span> Contact US!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div><!-- end modal-header -->
+          <div class="modal-body">
+            <p class="lead text-center">We like to receive a messages.</p>
+            <br>
+            <form>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-user col-1"></span>
+                <label class="sr-only" for="formInput1">Your Name</label>
+                <input type="text" class="form-control col-10" id="formInput1" placeholder="Your Name">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-envelope col-1"></span>
+                <label class="sr-only" for="formInput2">Email</label>
+                <input type="text" class="form-control col-10" id="formInput2" placeholder="Email">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-tag col-1"></span>
+                <label class="sr-only" for="formInput3">Subject</label>
+                <input type="text" class="form-control col-10" id="formInput3" placeholder="Subject">
+              </div>
+              <div class="form-group row">
+                <span class="glyphicon glyphicon-pencil col-1"></span>
+                <label class="sr-only" for="formInput4">Message</label>
+                <textarea type="text" class="form-control col-10" id="formInput4" rows="4" placeholder="Message"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary">Submit</button>
+                <div class="my-3">
+                  <p>Or <br> would you prefer to call? <br> <span class="glyphicon glyphicon-phone">+01 234 565 280</span></p>
+                </div>
+              </div>
+            </form>
+          </div><!-- end modal-body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+      </div><!-- end modal-dialog -->
+    </div><!-- end modal-contact -->
+
+    <!-- JUMBOTRON
+    ====================================================== -->
+    <section id="jumbotron" class="text-center mb-0" style="background: url(../img/banjo.jpg) no-repeat; background-position: bottom center; background-size: cover;">
+      
+      <div class="container">
+        <h1 class="display-4 text-white">Portfolio Page</h1>
+        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="hr-light my-4"></div>
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi est, aliquid inventore quo architecto qui ipsum nisi distinctio neque?</p>
+        <br>
+        <a href="#" class="btn btn-lg btn-primary">Learn more...</a>
+      </div><!-- end container -->
+
+    </section>
+
+    <!-- SECTION1 : TEXT-CONTENT
+    ====================================================== -->
+    <section>
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center mb-4">This is Portfolio Page</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptatem, error numquam sed iusto possimus omnis quo reiciendis veritatis accusantium laborum alias delectus distinctio rem, labore deleniti rerum quidem harum!</p> 
+            </div><!-- end col -->
+          </div><!--end row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+    
+    <!-- SECTION2 : PORTFOLIO-CONTENT
+    ====================================================== -->
+    <section class="portfolio-group">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="portfolio-item.html"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="portfolio-item.html"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href=portfolio-item.html><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="portfolio-item.html"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="portfolio-item.html"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="portfolio-item.html"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+            <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item">
+              <a href="#"><img class="img-fluid" src="http://wphani.cafe24.com/wp-content/uploads/2017/05/ACJ-ips-1-320x200.jpg" alt="alt"><h5>title</h5></a>
+            </div><!-- end portfolio-item -->
+
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+
+    <!-- HOW TO CONTACT
+    ====================================================== -->
+    <section id="howtoContact">
+      <div class="section-content">
+        <div class="container text-center text-white p-5">
+          <h2 class="mb-4">How to CONTACT US</h2>
+          <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error rerum, unde exercitationem!</p>
+          
+          <br>
+
+          <!-- Visible only on small devices -->
+          <div class="card card-sm hidden-sm-up mb-3">
+            <a href="#" class="btn btn-lg btn-block btn-danger"><span class="glyphicon glyphicon-phone"></span> Phone call!</a>
+          </div><!-- end card-small -->
+          <div class="card card-sm hidden-sm-up mb-3">
+            <a href="#" class="btn btn-lg btn-block btn-danger"><span class="glyphicon glyphicon-comment"></span> Katalk me!</a>
+          </div><!-- end card-small -->
+          <div class="card card-sm hidden-sm-up mb-3">
+            <a href="#" class="btn btn-lg btn-block btn-danger"><span class="glyphicon glyphicon-envelope"></span> Send Email!</a>
+          </div><!-- end card-small -->  
+
+          <div class="row main contact hidden-xs-down">
+            <div class="col-md">
+              <h4 class="col-title pt-5"><span class="glyphicon glyphicon-phone"></span> Phone</h4>
+              <p class="lead">051-111-1111</p>
+              <p class="col-text mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fugiat, ipsam necessitatibus laboriosam beatae, fuga doloribus consectetur ducimus ea eos placeat alias itaque possimus facilis suscipit pariatur rem officiis nemo.</p>
+            </div><!-- col -->
+            <div class="col-md">
+              <h4 class="col-title pt-5"><span class="glyphicon glyphicon-comment"></span> Kakaotalk</h4>
+              <p class="lead">@anapnbs</p>
+              <p class="col-text mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fugiat, ipsam necessitatibus laboriosam beatae, fuga doloribus consectetur ducimus ea eos placeat alias itaque possimus facilis suscipit pariatur rem officiis nemo.</p>
+            </div><!-- col -->
+            <div class="col-md">
+              <h4 class="col-title pt-5"><span class="glyphicon glyphicon-envelope"></span> Email</h4>
+              <p class="lead">my_email@email.com</p>
+              <p class="col-text mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fugiat, ipsam necessitatibus laboriosam beatae, fuga doloribus consectetur ducimus ea eos placeat alias itaque possimus facilis suscipit pariatur rem officiis nemo.</p>
+            </div><!-- col -->
+          </div><!-- end row -->
+          
+        </div><!-- end container -->
+      </div><!-- end section-content -->
+    </section>
+
+    <!-- FOOTER
+    ====================================================== -->
+    <footer id="footer-main">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <a href="#"><img src="../img/logo_your.png" alt="logo" class="mb-4"></a>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorem dolores ratione consequatur sapiente eaque. Omnis temporibus veritatis deleniti nobis nostrum dignissimos animi dolores reprehenderit libero incidunt! Quibusdam, harum, voluptatum.</p>
+          </div><!-- end col -->
+
+          <div class="col-lg-6 mb-4">
+            <h5 class="col-title text-white mb-4"><span class="glyphicon glyphicon-map-marker"></span> Our location</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.8477303578193!2d129.0098149506021!3d35.23516036181727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568950bbc7656f7%3A0x5f3a76816b48924e!2z7JWI7JWE7ZSI7IS47IOB7ZWc7J2Y7JuQIOu2gOyCsOygkA!5e0!3m2!1sko!2skr!4v1496755706319" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div><!-- end col -->
+
+          <div class="col-lg-3">
+            <h5 class="col-title text-white mb-4"><span class="glyphicon glyphicon-time"></span> Business hour</h5>
+            <ul class="list-unstyled text-white">
+              <li><strong>Mon, Wed, Fri :</strong> 10AM - 7:30PM</li>
+              <li><strong>Tue :</strong> 10AM - 8:30PM</li>
+              <li><strong>Thu :</strong> 10AM - 8:30PM</li>
+              <li><strong>Sat :</strong> 10AM - 2PM</li>
+              <li><strong>Hollydays :</strong> OFF</li>
+            </ul>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorem dolores ratione consequatur sapiente eaque.</p>
+            <p class="text-warning">TEL 051-111-1111<br>Kakaotalk @anapnbs</p>
+          </div><!-- end col -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </footer>
+
+    <!-- SOCKET
+    ====================================================== -->
+    <div id="socket" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <small class="copyright text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quis explicabo numquam hic, nemo maiores iste.</small>
+          </div><!-- end col -->
+          <div class="col-sm-3">
+            
+          </div><!-- end col -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Load the CDN jQuery first -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>window.jQuery || document.write('<script src="../assets/js/jquery-3.2.1.js"><\/script>');</script>
+
+    <!-- Tether JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Lightbox Lokeshdhakar JS -->
+    <script src="../assets/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Custom script.JS -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

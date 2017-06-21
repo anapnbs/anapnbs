@@ -96,9 +96,9 @@ img {
    padding-top: 6rem;
    padding-bottom: 6rem;
    background-color: #fff;
-   background: url(img/banjo.jpg) no-repeat;
+   /*background: url(img/banjo.jpg) no-repeat;
    background-position: bottom center;
-   background-size: cover;
+   background-size: cover;*/
 }
 
 #jumbotron .container {
@@ -146,6 +146,15 @@ img {
 
 .author-box {
    padding: 3rem;
+}
+
+.page-header {
+   border-bottom: 1px solid #eee;
+}
+
+ul.breadcrumb {}
+.breadcrumb {
+   background-color:transparent !important;
 }
 
 
@@ -324,6 +333,11 @@ div.comment {
    margin: 0;
 }
 
+/* == Profile Page == */
+#profile-page .profile {
+   text-align: center;
+}
+
 
 /* --------------------------------------
    Typography
@@ -356,6 +370,48 @@ div.comment {
 /* ----------- iPhone 4 and 4S ----------- */
 @media only screen and (max-width: 480px) {
 
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+   
+}
+
+/* ----------- iPhone 6 ----------- */
+@media only screen and (min-width: 375px) and (max-width: 667px) { 
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+@media only screen and (min-width: 414px) and (max-width: 736px) { 
+
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+/* ----------- Landscape tablet to portrait small desktop ----------- */
+@media only screen and (max-width: 991px) {
+   
+}
+
+@media only screen (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ----------- Large Screens ----------- */
+@media only screen and (min-width: 1200px) { 
+
+}
+
+
+
+/* == Portrait & landscape phone == */
+@media (max-width: 575px) {
+   
    .carousel-caption p {
       font-size: 12px;
    }
@@ -385,100 +441,25 @@ div.comment {
       font-size: 1.5rem;
    }
 
-}
-
-/* ----------- iPhone 5 and 5S ----------- */
-@media only screen 
-  and (min-width: 320px) 
-  and (max-width: 568px) {
-
-}
-
-/* ----------- iPhone 6 ----------- */
-@media only screen 
-  and (min-width: 375px) 
-  and (max-width: 667px) { 
-
-}
-
-/* ----------- iPhone 6+ ----------- */
-@media only screen 
-  and (min-width: 414px) 
-  and (max-width: 736px) { 
-
-}
-
-/* ----------- iPad mini ----------- */
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) {
-
-}
-
-/* ----------- iPad 1 and 2 ----------- */
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) {
-
-}
-
-/* ----------- iPad 3 and 4 ----------- */
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) {
-
-}
-
-/* ----------- Large Screens ----------- */
-@media only screen and (min-width: 1200px) { 
-
-}
-
-
-
-/* == Portrait & landscape phone == */
-@media (max-width: 480px) {
-   
-   /*.carousel-caption p {
-      font-size: 12px;
-   }
-   
-   .carousel-caption h3 {
-      font-size: 18px;
+   .portfolio-group .portfolio-item h5 {
+      display: none;
    }
 
-   .homeGallery {
-      margin-top: 2rem;
-   }
+}
 
-   .card {
-      margin: 2rem;
-   }
-
-   img.profile-image {
-      width:250px;
-      height: 250px;
-   }
+@media (min-width: 576px) and (max-width: 767px) {
 
    .cover-txt h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
    }
 
    .cover-txt h1 {
-      font-size: 1.4rem;
-   }*/
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-   /*.cover-txt h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
    }
 
-   .cover-txt h1 {
-      font-size: 2.5rem;
-   }*/
+   .portfolio-group .portfolio-item h5 {
+      width: 240px;
+   }
 }
 
 @media (min-width: 576px) {
@@ -509,41 +490,34 @@ div.comment {
       margin-top: 2rem;
    }
 
+   /*.portfolio-group .portfolio-item h5 {
+      width: 240px;
+   }
+*/
 }
 
-@media (min-width: 769px) and (max-width: 990px) {
+/* == Landscape tablet to portrait small desktop == */
+@media (min-width: 769px) and (max-width: 991px) {
 
    .cover-txt h2 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
    }
 
    .cover-txt h1 {
-      font-size: 3rem;
+      font-size: 2.2rem;
    }
 
-}
-
-@media (min-width: 576px) {
-
-   .tx-expenses {
-      padding: 1.5rem;
-      margin-right: 0;
-      margin-bottom: 0;
-      margin-left: 0;
-      border-width: .2rem;
+   .portfolio-group .portfolio-item h5 {
+      width: 210px;
    }
 
-}
-
-
-/* == Landscape tablet to portrait small desktop == */
-@media (max-width: 991px) {
-   
 }
 
 /* == Large desktop == */
-@media (min-width: 1200px) {
-   
+@media (min-width: 992px) and (max-width: 1199px) {
+   .portfolio-group .portfolio-item h5 {
+      width: 290px;
+   }
 }
 
 
