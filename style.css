@@ -57,14 +57,12 @@ img {
 /* == Home Page == */
 
 /* Optin Section */
-
 #optin {
    background: #3e4249;
    padding: 20px 0;
    color: white;
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizelegibility;
-   /*font-size: 1.2em;*/
 }
 
 #optin p {
